@@ -1,0 +1,57 @@
+<!doctype HTML>
+<html lang="da">
+<head>
+<script type="text/javascript">
+ 	$(document).ready(function(){
+      	$('#test-area').mouseout(function(){
+           	$('#mycursor').hide();
+           	return >false;
+      	});
+      	$('#test-area').mouseenter(function(){
+           	$('#mycursor').show();
+           	return >false;
+      	});
+      	$('#test-area').mousemove(function(e){
+           	$('#mycursor').css('left', e.clientX - 20).css('top', e.clientY + 7);
+      	});
+});
+</script>
+	<title>Craftyhorizon</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav id="sitenav">
+	<div id="navcontainer>
+		<a href="about.html" id="linkabout" >About</a>
+	</div>
+	</nav>
+
+	<div class="name">
+		<h1>Tobias Preecha Søgaard larsen</h1>
+	</div>
+	<div class="bodylist">
+		<ul>
+			<li>Fødselsdag 24.12.00</li>
+			<li>lol</li>
+			<li>Født I Thailand</li>
+			<li>WoW Is The Shit</li>
+			<li id="test-area">Im GAY AHA!!!!</li>
+		</ul>
+		<div id="pic">
+	<img url="https://public.viggo.dk/halvorsmindeefterskole/users/1341/big/70a0c.JPG?"/>
+	</div>
+	<div class="clearboth">
+	</div>
+	</div>
+<div id="mycursor"></div>
+	
+	<footer class="page-footer">
+		<div class="small-print">
+        	<div class="container">
+        		<p>Copyright &copy; Craftyhorizon 2017</p>
+        	</div>
+        </div>
+	</footer>
+	
+</body>
+</html>

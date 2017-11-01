@@ -1,0 +1,83 @@
+var source = window.parent;
+
+if (source === window) {
+  throw 'Cart iframe must not be loaded directly!!!';
+}
+
+postMessage('loaded');
+getCartData();
+
+
+function getCartData() {
+
+  fetch('/cart.js?v='+Date.now(), {credentials: 'include'})
+    .then(function (response) {
+      return response.json();
+    }).then(function (json) {
+    postMessage('getCart', json);
+  }).catch(function (ex) {
+    console.log('parsing failed', ex)
+  });
+}
+function updateCart(variantId, quantity) {
+
+  var
+    query = {
+      updates: {
+        [variantId]: quantity
+      }
+    },
+    body = JSON.stringify(query),
+    headers = {
+      'Content-Type': 'application/json',
+      'Content-Length': body.length,
+      'Accept': 'application/json'
+    };
+
+
+  fetch('/cart/update.js', {
+    method: 'post',
+    credentials: 'include',
+    headers,
+    body
+  })
+    .then(response => {
+      switch (response.status) {
+        case 200 :
+        case 201 :
+        case 204 :
+          break;
+
+        default :
+          throw response;
+      }
+      return response.json();
+    })
+    .then(function (json) {
+      postMessage('getCart', json);
+    }).catch(function (ex) {
+    console.log('parsing failed', ex)
+  });
+}
+
+function postMessage(name, payload) {
+  source.postMessage(JSON.stringify({name: name, payload: payload || null}), '*');
+}
+
+function receiveMessage(event) {
+
+  if (event.origin.match(/^http\:\/\/localhost|horizn-studios\.com$/i) === -1) {
+    throw event.origin + ' is no valid origin for post message events';
+  }
+
+  if (typeof event.data === 'string') {
+    const {name, payload} = JSON.parse(event.data);
+
+    switch (name) {
+      case 'updateCart':
+        updateCart(payload.variantId, payload.quantity);
+    }
+  }
+}
+
+window.addEventListener('message', receiveMessage, false);

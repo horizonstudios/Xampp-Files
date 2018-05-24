@@ -1,0 +1,16 @@
+div#container {height:500px;width:500px;}
+	img.a	{
+		width: 50px;
+		height:50px;
+		position:fixed;
+}
+     img.b {
+       width: 50px;
+       height:50px;
+       position:fixed;
+}
+     img.c {
+       width: 50px;
+       height:50px;
+       position:fixed;
+}

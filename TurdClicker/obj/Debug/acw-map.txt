@@ -1,0 +1,4 @@
+TurdClicker.MainActivity, TurdClicker;md53fb2ce78b80914e88017860b0835b6c8.MainActivity
+TurdClicker.MainActivity, TurdClicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53fb2ce78b80914e88017860b0835b6c8.MainActivity
+TurdClicker.MainActivity;md53fb2ce78b80914e88017860b0835b6c8.MainActivity
+turdclicker.MainActivity;md53fb2ce78b80914e88017860b0835b6c8.MainActivity

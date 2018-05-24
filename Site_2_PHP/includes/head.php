@@ -4,9 +4,9 @@
 	<meta name="description" content="Self made portfolio web design">
 	<meta name="keywords" content="self made, portfolio, web design">
 	<meta name="author" content="Tobias Preecha">
-	
-	<link rel="stylesheet" href="./css/master.css">
-
+	<script type="text/javascript" src="js/navbarscroll.js" ></script>
+	<link type='text/css' rel="stylesheet" href="./css/master.css">
+	<link type='text/css' rel="stylesheet" href="./css/effects.css">
 	<title>Tobias Preecha | Portfolio</title>
 
 </head>

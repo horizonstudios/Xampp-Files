@@ -22,6 +22,9 @@
 					include_once 'includes/footer.php'; 
 				?>
 			</div>
+<script type="text/javascript">
+	window.addEventListener("scroll",Scroll);
+</script>
 		</body>
 	</div>
 </html>

@@ -1,5 +1,5 @@
-<div id="header">
-	<header>
+<div class="header">
+	<header id="myHeader">
 		<div class="container">
 			<div id="branding">
 				<h1><span class="highlight">T</span>obias <span class="highlight">P</span>reecha</h1>

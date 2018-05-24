@@ -1,0 +1,13 @@
+This is a totally free model, created in MakeHuman, Wings3d and Lithunwrap.Use it as you see fit.
+
+
+There is an issue with the feet texture, As I haven't tried texturing this thing yet, I'm not sure which end is up on that texture.
+
+I'm not an animator, so if anyone can animate this, please send me it afterwards ? :D
+
+This is just an idea of how mmo's might do their texturing.
+
+Thanks for any comments, and suggestions.
+
+
+Wrapscallion.

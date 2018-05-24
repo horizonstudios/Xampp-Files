@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<div class="logo">
+	<a href="index.html"><img id="logo" src="images/logo.png">
+	</div>
+	<title>Craftyhorizon</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="scripts/autoslide.js"></script>
+</head>
+<header>
+	<div id="navbar">
+		<div id="links">
+			<a href="index.html" class="navlinks">Home</a>
+			<a href="Games.html" class="navlinks">Games(I guess..)</a>
+			<a href="Contact.html" class="navlinks">Contact</a>
+		</div>
+	</div>
+</header>
+<body style="overflow:scroll";> 	
+	<div id="pic">
+		<img id="image" src="images/profilepic.jpg">
+	</div>
+	<div id="footer">
+		<footer>
+			Horizon Studios 2017
+		</footer>
+	</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

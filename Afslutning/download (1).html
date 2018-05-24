@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>
+Animation types for 2d games that you should consider</title>
+<link rel="shortcut icon" href="https://marionettestudio.com/wp-content/uploads/2016/01/favicon.ico"/>
+<script>
+mixajaxurl = "https://marionettestudio.com/wp-admin/admin-ajax.php";
+</script>
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>-->
+<script src="https://marionettestudio.com/wp-content/themes/TheFox/js/html5.js"></script>
+<!--<![endif]-->
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>-->
+<script src="https://marionettestudio.com/wp-content/themes/TheFox/js/css3-mediaqueries.js"></script>
+<!--<![endif]-->
+
+<!-- This site is optimized with the Yoast SEO plugin v3.0.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Animation types for 2d games that every animator should know: idle animation, walk animation, fighting animation, and more. "/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://marionettestudio.com/animation-types-for-2d-games/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Animation types for 2d games that you should consider" />
+<meta property="og:description" content="Animation types for 2d games that every animator should know: idle animation, walk animation, fighting animation, and more. " />
+<meta property="og:url" content="https://marionettestudio.com/animation-types-for-2d-games/" />
+<meta property="og:site_name" content="Marionette Studio" />
+<meta property="article:publisher" content="https://www.facebook.com/marionettestudio" />
+<meta property="article:tag" content="2d animation tool" />
+<meta property="article:tag" content="2d animations for games" />
+<meta property="article:tag" content="2D games" />
+<meta property="article:tag" content="types of animation" />
+<meta property="article:section" content="2016 Trends" />
+<meta property="article:published_time" content="2016-11-14T13:13:54+00:00" />
+<meta property="article:modified_time" content="2018-03-03T14:15:47+00:00" />
+<meta property="og:updated_time" content="2018-03-03T14:15:47+00:00" />
+<meta property="og:image" content="https://marionettestudio.com/wp-content/uploads/2016/11/2d_animation.jpg" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:description" content="Animation types for 2d games that every animator should know: idle animation, walk animation, fighting animation, and more. "/>
+<meta name="twitter:title" content="Animation types for 2d games that you should consider"/>
+<meta name="twitter:site" content="@marionettestdio"/>
+<meta name="twitter:image" content="https://marionettestudio.com/wp-content/uploads/2016/11/2d_animation.jpg"/>
+<meta name="twitter:creator" content="@marionettestdio"/>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Marionette Studio &raquo; Feed" href="https://marionettestudio.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Marionette Studio &raquo; Comments Feed" href="https://marionettestudio.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Marionette Studio &raquo; Animation types for 2d games Comments Feed" href="https://marionettestudio.com/animation-types-for-2d-games/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/marionettestudio.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='dashicons-css'  href='https://marionettestudio.com/wp-includes/css/dashicons.min.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-jquery-ui-dialog-css'  href='https://marionettestudio.com/wp-includes/css/jquery-ui-dialog.min.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='layerslider-css'  href='https://marionettestudio.com/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ls-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='cptch_stylesheet-css'  href='https://marionettestudio.com/wp-content/plugins/captcha/css/style.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cptch_desktop_style-css'  href='https://marionettestudio.com/wp-content/plugins/captcha/css/desktop_style.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://marionettestudio.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cookielawinfo-style-css'  href='https://marionettestudio.com/wp-content/plugins/cookie-law-info/css/cli-style.css?ver=1.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://marionettestudio.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.1.1' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='oba_youtubepopup_css-css'  href='https://marionettestudio.com/wp-content/plugins/video-popup/css/YouTubePopUp.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/style.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='style_end-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/style_end.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefonts-css'  href='https://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C600%2C700%2C900%7COpen+Sans%3A700%2C300%2C600%2C400%7CRaleway%3A900%7CPlayfair+Display%7C%27+rel%3D%27stylesheet%27+type%3D%27text%2Fcss&#038;ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='media-queries-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/media-queries_wide.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rgs-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/css/rgs.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='css3_animations-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/css/animations.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslidercss-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/includes/Flexslider/flexslider.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-thefox-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/css/font-awesome.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='moon-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/css/moon.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='elegant-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/css/elegant.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='prettyphotocss-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/includes/prettyPhoto/css/prettyPhoto.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='js_frontend-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/css/thefox_js_composer.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='zilla-likes-css'  href='https://marionettestudio.com/wp-content/themes/TheFox/includes/zilla-likes/styles/zilla-likes.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-rd_data-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%7CRoboto+Condensed%3A300&#038;subset=latin&#038;ver=1520037787' type='text/css' media='all' />
+<script>
+if (document.location.protocol != "https:") {
+    document.location = document.URL.replace(/^http:/i, "https:");
+}
+</script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.8'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.6.2'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.6.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cptch_vars = {"nonce":"c46a5092df","ajaxurl":"https:\/\/marionettestudio.com\/wp-admin\/admin-ajax.php","enlarge":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/captcha/js/front_end_script.js?ver=4.3.1'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/cookie-law-info/js/cookielawinfo.js?ver=1.5.3'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.1.1'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/sticky-menu-or-anything-on-scroll/assets/js/jq-sticky-anything.min.js?ver=2.0.1'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/video-popup/js/YouTubePopUp.jquery.js'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/video-popup/js/YouTubePopUp.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://marionettestudio.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://marionettestudio.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.1" />
+<link rel='shortlink' href='https://marionettestudio.com/?p=9668' />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70135781-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '105754423527576');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=105754423527576&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<script>
+  fbq('track', 'Lead');
+</script><link type="text/css" rel="stylesheet" href="https://marionettestudio.com/wp-content/plugins/my-live-chat-for-wp/plugin_files/css/mylivechat.css" />
+<script type='text/javascript'>
+							SG_POPUPS_QUEUE = [];
+							SG_POPUP_DATA = [];
+							SG_APP_POPUP_URL = 'https://marionettestudio.com/wp-content/plugins/popup-builder';
+							SG_POPUP_VERSION='2.673_1;';
+							
+							function sgAddEvent(element, eventName, fn) {
+								if (element.addEventListener)
+									element.addEventListener(eventName, fn, false);
+								else if (element.attachEvent)
+									element.attachEvent('on' + eventName, fn);
+							}
+						</script><style type="text/css">.sg-popup-overlay-20,
+					.sg-popup-content-20 {
+						z-index: 9999 !important;
+					}
+					#sg-popup-content-wrapper-20 {
+						padding: 0px !important;
+					}</style><script type='text/javascript'>SG_POPUP_DATA[20] ={"id":"20","title":"Intro to Marionette Studio","type":"html","effect":"sgpb-fadeIn","0":"width","1":"960px","height":"580px","delay":10,"duration":2,"2":"initialWidth","3":"300","initialHeight":"100","width":"960px","buttonDelayValue":0,"escKey":"on","isActiveStatus":"on","scrolling":"","disable-page-scrolling":"on","scaling":"on","reposition":"on","overlayClose":"on","reopenAfterSubmission":"","contentClick":"","content-click-behavior":"close","click-redirect-to-url":"","redirect-to-new-tab":"","opacity":"1","popup-background-opacity":"1","sgOverlayColor":"","sg-content-background-color":"","popupFixed":"on","fixedPostion":"5","popup-dimension-mode":"customMode","popup-responsive-dimension-measure":"auto","maxWidth":"","maxHeight":"","initialWidth":"300","closeButton":"on","theme":"colorbox6.css","sgTheme3BorderColor":"","sgTheme3BorderRadius":"0","onScrolling":"","inActivityStatus":"","inactivity-timout":"0","beforeScrolingPrsent":0,"forMobile":"","openMobile":"","repeatPopup":"","popup-appear-number-limit":"1","save-cookie-page-level":"","autoClosePopup":"","countryStatus":"","showAllPages":"all","allPagesStatus":"","allPostsStatus":"","allCustomPostsStatus":"","allSelectedPages":"","showAllPosts":"all","showAllCustomPosts":"all","allSelectedPosts":"","allSelectedCustomPosts":"","posts-all-categories":"","all-custom-posts":"","sg-user-status":"","loggedin-user":"true","popup-timer-status":"","popup-schedule-status":"","popup-start-timer":"Mar 03 18 12:28","popup-finish-timer":"","schedule-start-weeks":"","schedule-start-time":"12:28","schedule-end-time":"","allowCountries":"","countryName":"","countryIso":"","disablePopup":"","disablePopupOverlay":"","popupClosingTimer":"","yesButtonLabel":"","noButtonLabel":"","restrictionUrl":"","yesButtonBackgroundColor":"","noButtonBackgroundColor":"","yesButtonTextColor":"","noButtonTextColor":"","yesButtonRadius":0,"noButtonRadius":0,"sgRestrictionExpirationTime":0,"restrictionCookeSavingLevel":"","pushToBottom":"","onceExpiresTime":"7","sgOverlayCustomClasss":"sg-popup-overlay","sgContentCustomClasss":"sg-popup-content","popup-z-index":"9999","popup-content-padding":"0","theme-close-text":"Close","socialButtons":"{\u0022sgTwitterStatus\u0022:\u0022\u0022,\u0022sgFbStatus\u0022:\u0022\u0022,\u0022sgEmailStatus\u0022:\u0022\u0022,\u0022sgLinkedinStatus\u0022:\u0022\u0022,\u0022sgGoogleStatus\u0022:\u0022\u0022,\u0022sgPinterestStatus\u0022:\u0022\u0022,\u0022pushToBottom\u0022:\u0022\u0022}","socialOptions":"{\u0022sgSocialTheme\u0022:\u0022\u0022,\u0022sgSocialButtonsSize\u0022:\u0022\u0022,\u0022sgSocialLabel\u0022:\u0022\u0022,\u0022sgSocialShareCount\u0022:\u0022\u0022,\u0022sgRoundButton\u0022:\u0022\u0022,\u0022fbShareLabel\u0022:\u0022\u0022,\u0022lindkinLabel\u0022:\u0022\u0022,\u0022sgShareUrl\u0022:null,\u0022shareUrlType\u0022:\u0022\u0022,\u0022googLelabel\u0022:\u0022\u0022,\u0022twitterLabel\u0022:\u0022\u0022,\u0022pinterestLabel\u0022:\u0022\u0022,\u0022sgMailSubject\u0022:\u0022\u0022,\u0022sgMailLable\u0022:\u0022\u0022}","countdownOptions":"{\u0022pushToBottom\u0022:\u0022\u0022,\u0022countdownNumbersBgColor\u0022:\u0022\u0022,\u0022countdownNumbersTextColor\u0022:\u0022\u0022,\u0022sg-due-date\u0022:\u0022\u0022,\u0022countdown-position\u0022:\u0022\u0022,\u0022counts-language\u0022:\u0022\u0022,\u0022sg-time-zone\u0022:\u0022\u0022,\u0022sg-countdown-type\u0022:\u0022\u0022,\u0022countdown-autoclose\u0022:\u0022\u0022}","exitIntentOptions":"{\u0022exit-intent-type\u0022:\u0022\u0022,\u0022exit-intent-expire-time\u0022:\u0022\u0022,\u0022exit-intent-alert\u0022:\u0022\u0022}","videoOptions":"{\u0022video-autoplay\u0022:\u0022\u0022}","fblikeOptions":"{\u0022fblike-like-url\u0022:null,\u0022fblike-layout\u0022:\u0022\u0022,\u0022fblike-dont-show-share-button\u0022:\u0022\u0022,\u0022fblike-close-popup-after-like\u0022:\u0022\u0022}","repetitivePopup":"","repetitivePopupPeriod":"60","randomPopup":"","popupOpenSound":"","popupOpenSoundFile":"https:\/\/marionettestudio.com\/wp-content\/plugins\/popup-builder\/files\/lib\/popupOpenSound.wav","popupContentBgImage":"","popupContentBgImageUrl":"","popupContentBackgroundSize":"cover","popupContentBackgroundRepeat":"no-repeat","htmlIframeUrl":"https:\/\/www.youtube.com\/embed\/AOJr6CgtZS4?rel=0\u0026amp;controls=0\u0026amp;showinfo=0","html":"\u003Ciframe width=\u0022960\u0022 height=\u0022530\u0022 src=\u0022 \u0022 frameborder=\u00220\u0022 allow=\u0022autoplay; encrypted-media\u0022 allowfullscreen\u003E\u003C\/iframe\u003E","customEvent":"0"};</script><script type="text/javascript">
+
+			sgAddEvent(window, 'load',function() {
+				var sgPoupFrontendObj = new SGPopup();
+				sgPoupFrontendObj.popupOpenById(20)
+			});
+		</script><!-- Custom Styling -->
+<style type="text/css">
+header.nav_type_2 {
+    min-height: 66px;
+}
+
+.nav_type_2 #logo_img{
+    line-height: 72px;
+    max-height: 72px;
+}
+
+#logo_img img {
+    max-height: 55px;
+}
+
+@media only screen and (max-width: 767px){
+    #logo_img img {
+        max-height: 35px;
+    }
+}
+
+.nav_type_2 ul li a {
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.transparent_header nav > ul > li > a {
+    opacity: 1.0 !important;
+}
+
+.transparent_header {
+    background: rgba(21,30,47,0.3)!important;
+}
+
+.create_animation_main_menu{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #FF8A07;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    height: 39px;
+    margin: 17px 0;
+}
+
+.shrinked_header .create_animation_main_menu{
+    margin: 3px 0;
+}
+
+.nav_type_2 ul li.create_animation_main_menu a{
+    padding: 8px 23px 10px 23px;
+    margin: 0;
+}
+
+.nav_type_2 nav ul li.create_animation_main_menu a:hover{
+    border-color: transparent;
+}
+
+.create_animation_main_menu:hover {
+    background-color: #FF7F00;
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+.nav_type_2 nav ul li.create_animation_main_menu a:hover, 
+.transparent_header.nav_type_2 nav > ul > li.create_animation_main_menu > a:hover {
+    border-color: transparent;
+    color: #FFFFFF!important;
+}
+
+.mc4wp-response .mc4wp-alert{
+    text-align: center;
+    width: 72%;
+}
+
+.CSSTableGenerator {
+	margin:0px;padding:0px;
+	width:100%;
+	border:1px solid #A5C0CE;
+	
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+	
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+	
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+	
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}.CSSTableGenerator table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}.CSSTableGenerator tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.CSSTableGenerator td{
+	vertical-align:middle;
+	
+	background-color:#ffffff;
+
+	border:1px solid #A5C0CE;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:7px;
+	font-size:14px;
+	font-family:"Lato", Arial, sans-serif;
+	font-weight:normal;
+	color:#474747;
+}.CSSTableGenerator tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+
+	background-color:#2294d2;
+	border:0px solid #2294d2;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:17px;
+	font-family:"Lato", Arial, sans-serif;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+code { 
+    font-family: monospace;
+    background-color: #F0F0F0;
+    font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+}
+
+.blogPost p{
+font-size:18px;
+line-height:1.5;
+}
+
+.blogPost .wp-caption-text{
+font-size:13px;
+}
+
+/**
+ * Footer
+ */
+#footer {
+	padding-bottom: 0px;
+}
+
+#footer h2{
+    font-family: "Roboto Condensed" !important;
+    font-weight: 400!important;
+}
+
+#footer a{
+    color: #ffffff!important;
+    font-size: 14px;
+}
+
+#footer .widget_wrap{
+    margin-bottom: 0!important;
+    margin-top: 40px!important;
+}
+
+#footer .page_item a, #footer .menu-item a{
+    padding: 0;
+}
+
+#footer .widget.rd_social_widget{
+    margin: 0!important;
+}
+
+.footer_type_2 #footer .widget h2{
+    margin-bottom: 14px;
+}
+
+#footer .widget.rd_social_widget h2{
+    margin-bottom: 10px!important;
+}
+
+#footer .thefox_social_widget_icons{
+    padding-left: 0!important;
+}
+
+
+#footer #facebook,
+#footer #twitter,
+#footer #yt,
+#footer #tumblr,
+#footer #reddit{
+    margin-bottom: 0!important;
+}
+
+#footer #facebook a,
+#footer #twitter a,
+#footer #yt a,
+#footer #tumblr a,
+#footer #reddit a{
+    background: transparent;
+    border: 1px solid #cecfd4;
+    color: #cecfd4!important;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.footer_type_6 .widget h2{
+	margin-bottom: 41px;
+}
+
+.footer_type_6 .widget_wrap {
+    margin: 80px 30px 5px 0;
+}
+
+#footer_coms .f_message_left{
+	float: none;
+    padding-bottom: 40px;
+	text-align: left;
+}
+
+#footer_coms .f_message_left,
+#footer_coms .f_message_left a{
+    color: #707579;
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#footer_coms{
+	padding: 0px;
+}
+
+#footer .thefox_social_widget .thefox_social_widget_icons{
+     padding-left: 12px;
+}
+
+.vc_row-fluid .mtt-pricetable-col{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.vc_row-fluid .vc_span3.mtt-pricetable-suggested-col{
+}
+
+.vc_row-fluid .vc_span3.mtt-pricetable-plan-col{
+
+}
+
+.mtt-pricetable-suggested{
+    background: #020E2F;
+    color: #FFFFFF;
+}
+
+.mtt-pricetable-plan{
+    background: #F8F8F8;
+}
+
+.mtt-pricetable-header{
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.mtt-pricetable-row{
+    display: flex;
+}
+
+.mtt-pricetable-row .vc_span3{
+    width: 25%;
+    margin: 0;
+}
+
+.mtt-pricetable-row .vc_span12{
+    margin: 0;
+}
+
+.mtt-feature-sm{
+    margin-bottom:0;
+}
+
+.mtt-price-sup{
+    font-size: 18px;
+    top: -17px;
+}
+
+.mtt-small-button a {
+    max-width: 160px;
+}
+
+.mtt-small-icon {
+    float: right;
+    margin-right: 20px;
+}
+@media only screen and (max-width: 767px){
+    .mtt-pricetable-col.vc_col-xs-8{
+            width: 75% !important;
+    }
+    
+    .mtt-pricetable-col.vc_col-xs-4{
+            width: 25% !important;
+    }
+}
+
+.on_top_overflow_visible{
+    overflow: visible;
+    z-index: 1;
+}
+
+.top_main_character{
+    position: absolute;
+    top: 0;
+}
+
+.top_main_character img{
+    height: 700px;
+    margin-left: -100px;
+    margin-top: -10px;
+    width: 643px;
+}
+
+@media only screen and (max-width: 1200px){
+    h2.vc_custom_heading.top_title_custom_heading{
+        margin-top: 10px!important;
+    }
+}
+
+.custom_top_zone .ta_center.tf_btn_pos{
+    display: inline-block!important;
+    width: 50%!important;
+}
+
+.custom_top_zone .ta_center.tf_btn_pos i{
+    font-size: 28px;
+    line-height: 18px!important;
+    vertical-align: bottom!important;
+}
+
+.custom_top_zone .rd_stroke_bt,
+.custom_top_zone .ta_center.tf_btn_pos span{
+    float: right!important;
+    font-family: Roboto!important;
+    font-weight: 500!important;
+}
+
+.custom_top_zone .rd_normal_bt{
+    float: left!important;
+}
+
+.custom_lists_container .list_item_ctn h3{
+    font-family: Roboto Condensed;
+    font-weight: 400;
+}
+
+.custom_lists_container .list_item_ctn p{
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: 'ls';
+    src:url('//marionettestudio.com/wp-content/themes/TheFox/includes/4k-icons/icons/4k-icons-pack03/icons/fonts/ls.eot');
+    src:url('//marionettestudio.com/wp-content/themes/TheFox/includes/4k-icons/icons/4k-icons-pack03/icons/fonts/ls.eot?#iefix') format('embedded-opentype'),
+    url('//marionettestudio.com/wp-content/themes/TheFox/includes/4k-icons/icons/4k-icons-pack03/icons/fonts/ls.woff') format('woff'),
+    url('//marionettestudio.com/wp-content/themes/TheFox/includes/4k-icons/icons/4k-icons-pack03/icons/fonts/ls.ttf') format('truetype'),
+    url('//marionettestudio.com/wp-content/themes/TheFox/includes/4k-icons/icons/4k-icons-pack03/icons/fonts/ls.svg#oi') format('svg');
+}
+
+.custom_testimonials .tm_text{
+    background: none!important;
+    border: none!important;
+    color: #ffffff!important;
+}
+
+.custom_testimonials .rd_tm_3 .tm_text::after{
+    content: none;
+}
+
+.custom_testimonials .quote_custom_start::before,
+.custom_testimonials .quote_custom_end::before{
+    color: #ffffff;
+    content: "\e887";
+    display: inline-block;
+    font-family: 'ls';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom_testimonials .quote_custom_start::before{
+    margin-right: 15px;
+    
+    -moz-transform: matrix(1, 0, 0, -1, 0, 0);
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+    -o-transform: matrix(1, 0, 0, -1, 0, 0);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.custom_testimonials .quote_custom_end::before{
+    margin-left: 15px;
+    
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.custom_testimonials .tm_author{
+    color: #ffffff!important;
+    font-weight: 400 !important;
+}
+
+@media only screen and (max-width: 380px){
+    .custom_testimonials .tm_info{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .custom_testimonials .tm_info{
+        margin-bottom: -45px !important;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .custom_testimonials .tm_info{
+        margin-bottom: -24px !important;
+    }
+}
+
+.custom_testimonials .tm_info{
+    color: #ffffff !important;
+    font-weight: 300 !important;
+    left: 25% !important;
+    line-height: 23px;
+    width: 100% !important;
+}
+
+.font_size_zero{
+    font-size: 0;
+}
+
+.homepage_icon_row .fourk-icon-container{
+    height: 70px;
+}
+
+.homepage_icon_row .fourk-icon-container .fourk-icon i{
+    line-height: 70px !important;
+}
+
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 40%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+  padding: 18px
+ /* -webkit-transform:rotate(-20deg);
+  -moz-transform:rotate(-20deg);
+  -ms-transform:rotate(-20deg);
+  -o-transform:rotate(-20deg);
+  transform:rotate(-20deg);*/
+}
+
+.mtt-subscripton-tabs .tab_content{
+    padding: 0px;
+    margin-left: 0px;
+}
+
+.mtt-subscripton-tabs .vertical #tabs{
+    width: 25%;
+}
+
+.mtt-subscripton-tabs .vertical .tabs-container {
+    width: 75%;
+}
+
+.mtt-subscripton-tabs  .vc_row-fluid .vc_span4{
+    width: 33.666666666666668%;
+    margin-left:0;
+}
+
+.mtt-subscripton-tabs .rd_tabs li{
+    background: transparent;
+    cursor: pointer;
+}
+
+.mtt-subscripton-tabs .vertical .active{
+    border: 0px;
+}
+
+.mtt-subscripton-tabs .rd_tabs.vertical li a{
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 1px 1px #335F59;
+}
+
+.mtt-subscripton-tabs .tabli.active .imf-radio-unchecked:before {
+    content: "\e052" !important;
+    font-family: 'elg' !important;
+}
+
+.mtt-subscripton-tabs .rd_tabs{
+    overflow: visible;
+}
+
+.mtt-subscripton-tabs-xs .tabli.active .imf-radio-unchecked:before{
+    content: "\e052" !important;
+    font-family: 'elg' !important;
+}
+
+.mtt-subscripton-tabs-xs .rd_tabs.horizontal .tabs-container{
+    background: transparent;
+}
+
+.mtt-subscripton-tabs-xs .rd_tabs li{
+    background: transparent;
+}
+
+.mtt-subscripton-tabs-xs .rd_tabs.horizontal .tabs-container,
+.mtt-subscripton-tabs-xs .rd_tabs.horizontal .tabs li, 
+.mtt-subscripton-tabs-xs .rd_tabs.horizontal .tabs li:last-child,
+.mtt-subscripton-tabs-xs .rd_tabs.horizontal .tabs li.active{
+    border: none !important;
+}
+
+.application-form-container input[type='checkbox']{
+    width: auto !important;
+}
+
+
+/*
+ * Over write
+ */
+ 
+ @media only screen and (max-width: 767px) {
+    .vc_row-fluid .vc_col-xs-6 {
+        width: 48.75% !important;
+    }
+    .vc_row-fluid .vc_col-xs-3 {
+        width: 23.125% !important;
+    }
+    .vc_row-fluid .vc_col-xs-9 {
+        width: 74.375% !important;
+    }
+}
+
+
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+    display: none;
+}
+
+.weekly-webinar > a{
+    color: white;
+    font-weight: 200;
+    border: 2px dashed white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+#logo_img img{max-width:150px;}.cl_before_logo{margin-right:105px;}.cl_after_logo{margin-left:105px;}.nav_type_9_c #logo_img, .nav_type_9_c .logo_text{margin-left:-75px;}.nav_type_9_c #logo_img,.nav_type_9_c .logo_text{min-width:150px;}#mobile-menu{background:#222533}#mobile-menu ul ul{background:#2e3244;}#mobile-menu ul ul ul{background:#35384d;}#mobile-menu .mobile-ul-open > a{color:#288bd0}#mobile-menu .mobile-ul-open:after{color:#288bd0 !important;}#mobile-menu .current_page_item{ background:#191b26;}#mobile-menu .current_page_item > a { border-left:2px solid #288bd0;}#mobile-menu ul li a{color:#ffffff}#mobile-menu .menu-item-has-children:after{color:#5a5d6b;}#mobile-menu ul li li li a{color:#69708f}#mobile-menu ul ul .menu-item-has-children:after{color:#5d637d;}#mobile_menu_search #search input[type=text]{background:#191b26 !important; color:#69708f;}#mobile_menu_search #search input[type=submit]{color:#69708f;}#top_bar,#rd_wpml #lang_sel ul ul{background:transparent;}.topbar_type_1,.topbar_type_1 a,.topbar_type_1 #rd_wpml #lang_sel a{color:#a1b1bc;}.topbar_type_1 strong,.topbar_type_1 .topbar_woocommerce_login.type1 .topbar_sign_in,.topbar_type_1 .topbar_woocommerce_login.type1 .topbar_register,.topbar_type_1 .topbar_woocommerce_login.type1 .topbar_signed_in,.topbar_type_1 #rd_wpml #lang_sel li li a:hover{color:#2c3e50;}.topbar_type_1 .top_email:before,.topbar_type_1 .top_phone:before,.topbar_type_1 .top_text:before{color:#1abc9c;}.topbar_type_1 .top_email,.topbar_type_1 .top_phone,.topbar_type_1 #header_socials,.topbar_type_1 .header_current_cart{border-right:1px solid #ebebeb; padding-right:20px; padding-left:20px;}.topbar_type_1 .topbar_woocommerce_login{border-right:1px solid #ebebeb; border-left:1px solid #ebebeb; padding-right:20px; padding-left:20px;}.topbar_type_1 #rd_wpml,.topbar_type_1 .top_bar_menu{border-right:1px solid #ebebeb;}.topbar_type_1 .wrapper > div:first-child {border-left:1px solid #ebebeb;}.topbar_type_1 .topbar_woocommerce_login.type1 .topbar_register{ border:1px solid #ebebeb; border-bottom:2px solid #ebebeb}.topbar_type_1 .topbar_woocommerce_login.type2 .topbar_register{ border:1px solid #a1b1bc; background:#a1b1bc; color:transparent;}.topbar_type_1 .topbar_woocommerce_login.type2 .topbar_sign_in,.topbar_type_1 .topbar_woocommerce_login.type2 .topbar_signed_in{ border:1px solid #a1b1bc;}.topbar_type_1 #header_socials a:hover{ color:#2c3e50;}.topbar_type_2,.topbar_type_2 a,.topbar_type_2 #rd_wpml #lang_sel a{color:#a1b1bc;}.topbar_type_2 strong,.topbar_type_2 .topbar_woocommerce_login.type1 .topbar_sign_in,.topbar_type_2 .topbar_woocommerce_login.type1 .topbar_register,.topbar_type_2 .topbar_woocommerce_login.type1 .topbar_signed_in,.topbar_type_2 #rd_wpml #lang_sel li li a:hover{color:#2c3e50;}.topbar_type_2 .top_email:before,.topbar_type_2 .top_phone:before,.topbar_type_2 .top_text:before{color:#1abc9c;}.topbar_type_2 .top_email,.topbar_type_2 .top_phone,.topbar_type_2 #header_socials,.topbar_type_2 .header_current_cart{border-right:1px solid #ebebeb; padding-right:20px; padding-left:20px;}.topbar_type_2 .topbar_woocommerce_login{border-right:1px solid #ebebeb; border-left:1px solid #ebebeb; padding-right:20px; padding-left:20px;}.topbar_type_2 { border-top:5px solid #1abc9c;}.topbar_type_2 #rd_wpml,.topbar_type_2 .top_bar_menu{border-right:1px solid #ebebeb;}.topbar_type_2 .wrapper > div:first-child {border-left:1px solid #ebebeb;}.topbar_type_2 .topbar_woocommerce_login.type1 .topbar_register{ border:1px solid #ebebeb; border-bottom:2px solid #ebebeb}.topbar_type_2 .topbar_woocommerce_login.type2 .topbar_register{ border:1px solid #a1b1bc; background:#a1b1bc; color:transparent;}.topbar_type_2 .topbar_woocommerce_login.type2 .topbar_sign_in,.topbar_type_2 .topbar_woocommerce_login.type2 .topbar_signed_in{ border:1px solid #a1b1bc;}.topbar_type_2 #header_socials a:hover{ color:#2c3e50;}.topbar_type_3,.topbar_type_3 a,.topbar_type_3 #rd_wpml #lang_sel a{color:#a1b1bc;}.topbar_type_3 strong,.topbar_type_3 .topbar_woocommerce_login.type1 .topbar_sign_in,.topbar_type_3 .topbar_woocommerce_login.type1 .topbar_register,.topbar_type_3 .topbar_woocommerce_login.type1 .topbar_signed_in,.topbar_type_3 #rd_wpml #lang_sel li li a:hover{color:#2c3e50;}.topbar_type_3 .top_email:before,.topbar_type_3 .top_phone:before,.topbar_type_3 .top_text:before{color:#1abc9c;}.topbar_type_2 { border-top:5px solid #1abc9c;}.topbar_type_3 .topbar_woocommerce_login.type1 .topbar_register{ border:1px solid #ebebeb; border-bottom:2px solid #ebebeb}.topbar_type_3 .topbar_woocommerce_login.type2 .topbar_register{ border:1px solid #a1b1bc; background:#a1b1bc; color:transparent;}.topbar_type_3 .topbar_woocommerce_login.type2 .topbar_sign_in,.topbar_type_3 .topbar_woocommerce_login.type2 .topbar_signed_in{ border:1px solid #a1b1bc;}.topbar_type_3 #header_socials a:hover{ color:#2c3e50;}.topbar_type_4,.topbar_type_4 a,.topbar_type_4 #rd_wpml #lang_sel a{color:#a1b1bc;}.topbar_type_4 strong,.topbar_type_4 .topbar_woocommerce_login.type1 .topbar_sign_in,.topbar_type_4 .topbar_woocommerce_login.type1 .topbar_register,.topbar_type_4 .topbar_woocommerce_login.type1 .topbar_signed_in,.topbar_type_4 #rd_wpml #lang_sel li li a:hover{color:#2c3e50;}.topbar_type_4 .top_email:before,.topbar_type_4 .top_phone:before,.topbar_type_4 .top_text:before{color:#1abc9c;}.topbar_type_4 { border-top:5px solid #1abc9c;}.topbar_type_4 .topbar_woocommerce_login.type1 .topbar_register{ border:1px solid #ebebeb; border-bottom:2px solid #ebebeb}.topbar_type_4 .topbar_woocommerce_login.type2 .topbar_register{ border:1px solid #a1b1bc; background:#a1b1bc; color:transparent;}.topbar_type_4 .topbar_woocommerce_login.type2 .topbar_sign_in,.topbar_type_4 .topbar_woocommerce_login.type2 .topbar_signed_in{ border:1px solid #a1b1bc;}.topbar_type_4 #header_socials a:hover{ color:#2c3e50;}.topbar_type_5,.topbar_type_5 a,.topbar_type_5 #rd_wpml #lang_sel a{color:#a1b1bc;}.topbar_type_5 strong,.topbar_type_5 .topbar_woocommerce_login.type1 .topbar_sign_in,.topbar_type_5 .topbar_woocommerce_login.type1 .topbar_register,.topbar_type_5 .topbar_woocommerce_login.type1 .topbar_signed_in,.topbar_type_5 #rd_wpml #lang_sel li li a:hover,.topbar_woocommerce_login.type2 .topbar_sign_in:hover,.top_email a:hover{color:#2c3e50;}.topbar_type_5 .top_email:before,.topbar_type_5 .top_phone:before,.topbar_type_5 .top_text:before{color:#1abc9c; }.topbar_type_5 .top_email,.topbar_type_5 .top_phone,.topbar_type_5 #header_socials,.topbar_type_5 .header_current_cart{border-right:1px solid #ebebeb; padding-right:20px; padding-left:20px;}.topbar_type_5 .topbar_woocommerce_login{border-right:1px solid #ebebeb; border-left:1px solid #ebebeb; padding-right:20px; padding-left:20px;}.topbar_type_5 .wrapper > div:first-child {border-left:1px solid #ebebeb;}.topbar_type_5 #rd_wpml,.topbar_type_5 .top_bar_menu{border-right:1px solid #ebebeb;}.topbar_type_5 { border-top:4px solid #1abc9c; border-bottom:1px solid #ebebeb}.topbar_type_5 .topbar_woocommerce_login.type1 .topbar_register{ border:1px solid #ebebeb; border-bottom:2px solid #ebebeb}.topbar_type_5 .topbar_woocommerce_login.type2 .topbar_register{ border:1px solid #a1b1bc; background:#a1b1bc; color:transparent;}.topbar_type_5 .topbar_woocommerce_login.type2 .topbar_sign_in,.topbar_type_5 .topbar_woocommerce_login.type2 .topbar_signed_in{ border:1px solid #a1b1bc;}.topbar_type_5 #header_socials a:hover{ color:#2c3e50;}.header_current_cart .cart-content-tb.tbi-with-border{border:1px solid #ebebeb;}.header_current_cart .cart-content-tb.tbi-with-bg{background:#ebebeb;}.header_current_cart .cart-content-tb:before{color:#1abc9c;}.header_current_cart .cart-content-tb:hover{color:#a1b1bc;}.transparent_header{background:rgba(39,101,230,0)!important;}.transparent_header{border-bottom:1px solid rgba(2,15,42,0)!important;}header,.mt_menu{background:#020f2a;}header.transparent_header.opaque_header{background:#020f2a !important; border-bottom:none!important;}#nav_button:before,#nav_button_alt:before{color:#ffffff;}.logo_text a{color:#ffffff;}.transparent_header .logo_text a{color:#fff;}.transparent_header.opaque_header .logo_text a{color:#ffffff;}.nav_type_1 nav ul,.nav_type_1 .header_current_cart{background:#020f2a;}.nav_type_1 ul li a,.nav_type_1 a#searchtop_img{color:#ffffff;}.nav_type_1 nav ul li a:hover,.nav_type_1 > ul > .current-menu-item > a{color:#2294d2; background:#020f2a;}.nav_type_1 .cart-content:hover,.nav_type_1 #searchtop_img:hover i{color:#2294d2;}header.nav_type_2{border-top:1px solid #020f2a;}.nav_type_2 nav ul,.nav_type_2 .header_current_cart{background:#020f2a;}.nav_type_2 ul li a,.nav_type_2 a#searchtop_img{color:#ffffff;}.nav_type_2 nav ul li a:hover,.nav_type_2 > ul > .current-menu-item > a,.transparent_header.nav_type_2 nav > ul > .current-menu-item > a,.transparent_header.nav_type_2 nav > ul > li > a:hover{color:#2294d2; border-top:3px solid #2294d2; }.nav_type_2 .cart-content:hover,.nav_type_2 #searchtop_img:hover i{color:#2294d2;}header.nav_type_3{border-top:1px solid #020f2a;}.nav_type_3 nav ul,.nav_type_3 .header_current_cart{background:#020f2a;}.nav_type_3 ul li a,.nav_type_3 a#searchtop_img{color:#ffffff;}.nav_type_3 nav ul li a:hover,.nav_type_3 > ul > .current-menu-item > a{color:#2294d2; background:#020f2a;}.nav_type_3 .cart-content:hover,.nav_type_3 #searchtop_img:hover i{color:#2294d2;}header.nav_type_4{border-top:1px solid #020f2a;}.nav_type_4 nav ul,.nav_type_4 .header_current_cart{background:#020f2a;}.nav_type_4 ul li a,.nav_type_4 a#searchtop_img{color:#ffffff;}.nav_type_4 nav ul li a:hover,.nav_type_4  > ul > .current-menu-item > a{color:#2294d2; background:#020f2a;}.nav_type_4 .cart-content:hover,.nav_type_4 #searchtop_img:hover i{color:#2294d2;}.nav_type_5 nav ul,.nav_type_5 .header_current_cart{background:#020f2a;}.nav_type_5 ul li a{color:#ffffff; border-top:5px solid #020f2a;}.nav_type_5 a#searchtop_img{color:#ffffff;}.nav_type_5 nav ul li a:hover,.nav_type_5 > ul > .current-menu-item > a,.transparent_header.nav_type_5 nav > ul > .current-menu-item > a,.transparent_header.nav_type_5 nav > ul > li > a:hover{color:#2294d2; border-top:5px solid #2294d2 !important; }.nav_type_5 .cart-content:hover,.nav_type_5 #searchtop_img:hover i{color:#2294d2;}.nav_type_6 nav ul,.nav_type_6 .header_current_cart{background:#020f2a;}.nav_type_6 ul li a{color:#ffffff; border-top:5px solid #020f2a;}.nav_type_6 a#searchtop_img{color:#ffffff;}.nav_type_6 nav ul li a:hover,.nav_type_6 > ul > .current-menu-item > a,.transparent_header.nav_type_6 nav > ul > .current-menu-item > a,.transparent_header.nav_type_6 nav > ul > li > a:hover{color:#2294d2; border-top:5px solid #2294d2 !important;}.nav_type_6 .cart-content:hover,.nav_type_6 #searchtop_img:hover i{color:#2294d2;}.nav_type_7 nav ul,.nav_type_7 .header_current_cart{background:#020f2a;}.nav_type_7 ul li a,.nav_type_7 a#searchtop_img{color:#ffffff;}.nav_type_7 nav ul li a:hover,.nav_type_7 > ul > .current-menu-item > a{color:#2294d2; background:#020f2a;}.nav_type_7 .cart-content:hover,.nav_type_7 #searchtop_img:hover i{color:#2294d2;}header.nav_type_8{border-top:1px solid #020f2a;}.nav_type_8 nav ul,.nav_type_8 .header_current_cart{background:#020f2a;}.nav_type_8 ul li a,.nav_type_8 a#searchtop_img{color:#ffffff;}.nav_type_8 nav ul li a:hover,.nav_type_8 > ul > .current-menu-item > a{color:#2294d2; background:#020f2a;}.nav_type_8 .cart-content:hover,.nav_type_8 #searchtop_img:hover i{color:#2294d2;}.nav_type_9 nav ul,.nav_type_9 .header_current_cart{background:#020f2a;}.nav_type_9 ul li a{color:#ffffff; border-top:5px solid rgba(0,0,0,0);}.nav_type_9 a#searchtop_img{color:#ffffff;}.nav_type_9 nav ul li a:hover,.nav_type_9 > ul > .current-menu-item > a,.transparent_header.nav_type_9 nav > ul > .current-menu-item > a,.transparent_header.nav_type_9 nav > ul > li > a:hover{color:#2294d2; border-top:5px solid #2294d2 !important;}.nav_type_9 .cart-content:hover,.nav_type_9 #searchtop_img:hover i{color:#2294d2;}.nav_type_9_c nav ul,.nav_type_9_c .header_current_cart{background:#020f2a;}.nav_type_9_c ul li a{color:#ffffff; border-top:5px solid rgba(0,0,0,0);}.nav_type_9_c a#searchtop_img{color:#ffffff;}.nav_type_9_c nav ul li a:hover,.nav_type_9_c > ul > .current-menu-item > a,.transparent_header.nav_type_9_c nav > ul > .current-menu-item > a,.transparent_header.nav_type_9_c nav > ul > li > a:hover{color:#2294d2; border-top:5px solid #2294d2 !important;}.nav_type_9_c .header_current_cart,.nav_type_9_c #searchtop{display:none !important;}.nav_type_10 nav ul,.nav_type_10 .header_current_cart{background:#020f2a;}.nav_type_10 ul li a{color:#ffffff; border-top:5px solid rgba(0,0,0,0);}.nav_type_10 a#searchtop_img{color:#ffffff;}.nav_type_10 nav ul li a:hover,.nav_type_10 > ul > .current-menu-item > a,.transparent_header.nav_type_15 nav > ul > .current-menu-item > a,.transparent_header.nav_type_15 nav > ul > li > a:hover{color:#2294d2; border-top:5px solid #2294d2 !important;}.nav_type_10 .cart-content:hover,.nav_type_10 #searchtop_img:hover i{color:#2294d2;}.nav_type_11 nav ul,.nav_type_11 .header_current_cart{background:#020f2a;}.nav_type_11 ul li a{color:#ffffff; border:1px solid rgba(0,0,0,0);}.nav_type_11 a#searchtop_img{color:#ffffff;}.nav_type_11 nav ul li a:hover,.nav_type_11 > ul > .current-menu-item > a,.transparent_header.nav_type_11 nav > ul > .current-menu-item > a,.transparent_header.nav_type_11 nav > ul > li > a:hover{color:#2294d2; border:1px solid #2294d2 !important; background:#020f2a;}.nav_type_11 .cart-content:hover,.nav_type_11 #searchtop_img:hover i{color:#2294d2;}.nav_type_12 nav ul,.nav_type_12 .header_current_cart{background:#020f2a;}.nav_type_12 ul li a{color:#ffffff; border:2px solid rgba(0,0,0,0);}.nav_type_12 a#searchtop_img{color:#ffffff;}.nav_type_12 nav ul li a:hover,.nav_type_12 > ul > .current-menu-item > a,.transparent_header.nav_type_12 nav > ul > .current-menu-item > a,.transparent_header.nav_type_12 nav > ul > li > a:hover{color:#2294d2; border:2px solid #2294d2 !important; background:#020f2a;}.nav_type_12 .cart-content:hover,.nav_type_12 #searchtop_img:hover i{color:#2294d2;}header.nav_type_13{border-top:2px solid #020f2a;}.nav_type_13 nav ul,.nav_type_13 .header_current_cart{background:#020f2a;}.nav_type_13 ul li a,.nav_type_13 a#searchtop_img{color:#ffffff;}.nav_type_13 nav ul li a:hover,.nav_type_13 > ul > .current-menu-item > a{color:#2294d2; background:#020f2a;}.nav_type_13 .cart-content:hover,.nav_type_13 #searchtop_img:hover i{color:#2294d2;}header.nav_type_14{border-top:5px solid #020f2a;}.nav_type_14 nav ul,.nav_type_1 .header_current_cart{background:#020f2a;}.nav_type_14 ul li a,.nav_type_14 a#searchtop_img{color:#ffffff;}.nav_type_14 nav ul li a:hover,.nav_type_14 > ul > .current-menu-item > a{color:#2294d2; background:#020f2a;}.nav_type_14 .cart-content:hover,.nav_type_14 #searchtop_img:hover i{color:#2294d2;}.header_bottom_nav.transparent_header.opaque_header{background:#020f2a !important;}header.nav_type_15,.header_bottom_nav.nav_type_15{border-top:1px solid #020f2a;}.header_bottom_nav.nav_type_15{background:#020f2a;}.nav_type_15 ul li a{color:#ffffff; border-right:1px solid #020f2a}.nav_type_15 ul li:first-child a{border-left:1px solid #020f2a} .nav_type_15 nav ul li a:hover,.nav_type_15 > ul > .current-menu-item > a{color:#2294d2; background:#020f2a;}header #header_socials a,.nav_type_15 a#searchtop_img{color:#ffffff;}header #header_socials a:hover{color:#2294d2;}.header_bottom_nav.nav_type_15 .cart-content:hover,.header_bottom_nav.nav_type_15 #searchtop_img:hover i{color:#2294d2;}.header_bottom_nav.nav_type_16{border-top:1px solid #020f2a;}.header_bottom_nav.nav_type_16{background:#020f2a;}.nav_type_16 ul li a,.nav_type_16 a#searchtop_img{color:#ffffff;}.nav_type_16 nav ul li a:hover,.nav_type_16 > ul > .current-menu-item > a{color:#2294d2; background:#020f2a;}.header_bottom_nav.nav_type_16 .cart-content:hover,.header_bottom_nav.nav_type_16 #searchtop_img:hover i{color:#2294d2;}.header_bottom_nav.nav_type_17{border-top:1px solid #020f2a;}.header_bottom_nav.nav_type_17{background:#020f2a;}.nav_type_17 ul li a,.nav_type_17 a#searchtop_img{color:#ffffff;}.nav_type_17 nav ul li a:hover,.nav_type_17 > ul > .current-menu-item > a,.transparent_header.nav_type_17 nav > ul > .current-menu-item > a,.transparent_header.nav_type_17 nav > ul > li > a:hover{color:#2294d2; border-top:3px solid #2294d2 !important;}.header_bottom_nav.nav_type_17 .cart-content:hover,.header_bottom_nav.nav_type_17 #searchtop_img:hover i{color:#2294d2;}.header_bottom_nav.nav_type_18{border-top:1px solid #020f2a;}.header_bottom_nav.nav_type_18{background:#020f2a;}.nav_type_18 ul li a,.nav_type_18 a#searchtop_img{color:#ffffff;}.nav_type_18 nav ul li a:hover,.nav_type_18 > ul >.current-menu-item > a{color:#2294d2; background#020f2a;}.header_bottom_nav.nav_type_18 .cart-content:hover,.header_bottom_nav.nav_type_18 #searchtop_img:hover i{color:#2294d2;}.nav_type_19 ul li a,.nav_type_19_f ul li a{color:#ffffff;}.nav_type_19 ul > li > a,.nav_type_19_f ul > li > a{border-bottom:1px solid #020f2a;}.nav_type_19 ul ul li a,.nav_type_19_f ul ul li a{border-right:1px solid #020f2a;}#edge-search-form .search_button_icon{color:#ffffff;}.nav_type_19 ul li a:hover,.nav_type_19 > ul > .current-menu-item > a,.nav_type_19_f ul li a:hover,.nav_type_19_f > ul > .current-menu-item > a{color:#2294d2;}.nav_type_19 .cart-content:hover,.nav_type_19 #searchtop_img:hover i,.nav_type_19_f .cart-content:hover,.nav_type_19_f #searchtop_img:hover i{color:#2294d2;}#fixed_header_socials a{color:#ffffff;}#fixed_header_socials a{border:1px solid #020f2a;}.fixed_header_left{border-right:1px solid #ecf0f1;}#edge-search-form input[type=text]{border:1px solid #020f2a; background:#020f2a;}ul.header_current_cart li .cart-content{color:#ffffff; font-weight: normal;}.transparent_header.opaque_header nav > ul > li > a, .transparent_header.opaque_header .cart-content{color:#ffffff !important;}.transparent_header.opaque_header nav > ul > li > a:hover,.transparent_header nav > ul > .current-menu-item > a,.transparent_header nav > ul > li > a:hover{color:#2294d2 !important;}ul.header_cart_dropdown,.header_cart_dropdown .button,#search-form,#search-form.pop_search_form #ssform,.child_pages_ctn li,#header_container nav ul li ul,#header_container nav ul li ul a{background:#ffffff;}#header_container nav .rd_megamenu ul li a, .rd_megamenu ul li a,.header_cart_dropdown ul.cart_list li a,.header_cart_dropdown .widget_shopping_cart_content .rd_cart_buttons a{color:#2c3e50;}.header_cart_dropdown, #header_container nav .rd_megamenu ul ul li a, .rd_megamenu ul ul li a,#header_container nav ul ul li a,.header_cart_dropdown .rd_clear_btn,.header_cart_dropdown .total,#search-form.pop_search_form #ssform,.child_pages_ctn a{color:#a1b1bc;}.header_cart_dropdown .quantity,.header_cart_dropdown .product_list_widget span.amount,.header_cart_dropdown .total .amount,.search_button_icon{color:#288bd0;}.header_cart_dropdown ul.cart_list li a.remove:hover,.child_pages_ctn a:hover{background:#2396e6; color:#ffffff;}.header_cart_dropdown ul.cart_list li a:hover{color:#2396e6;}.header_cart_dropdown .rd_clear_btn:hover{color:#020f2a;}ul.header_cart_dropdown,#search-form.pop_search_form #ssform{border:1px solid #ecf0f1;}#header_container nav ul ul .current-menu-item li a, #header_container nav ul ul li a{border-left:1px solid #ecf0f1;}#header_container .fixed_header_left nav ul ul ul li a{border-left:1px solid #ecf0f1 !important;}#header_container .fixed_header_left nav ul ul .current-menu-item li a, #header_container .fixed_header_left nav ul ul li a{border-right:1px solid #ecf0f1 !important;}#header_container .fixed_header_left nav ul ul, #header_container .fixed_header_left nav ul ul{border-top:1px solid #ecf0f1 !important;}#header_container nav ul ul li,ul.header_cart_dropdown ul.product_list_widget li.child_pages_ctn a{border-bottom:1px solid #ecf0f1;}#header_container .rd_megamenu ul li ul,.header_cart_dropdown .clear_total{border-top:1px solid #ecf0f1;}#header_container nav ul ul,.widget_shopping_cart_content,#search-form{border-top:3px solid #288bd0;}.current_item_number{background:#288bd0;}.rd_cart_buttons{background:#020f2a;}.header_cart_dropdown .button{background:#ffffff; border:2px solid #ffffff  !important;}.header_cart_dropdown .widget_shopping_cart_content .rd_cart_buttons .button:hover{background:#020f2a; border:2px solid #ffffff !important; color:#ffffff;}.current_item_number:before{border-color: transparent #288bd0 transparent;}.header_cart_dropdown ul.cart_list li a.remove{background:#a1b1bc;}#header_container nav ul ul li a:hover,#header_container nav ul ul li.current-menu-item a{background:#ecf0f1; color:#2c3e50;}#header_container nav ul ul .mm_widget_area{border:none!important; border-left:1px solid #ecf0f1 !important;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .product_list_widget a{color:#2c3e50;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .product_list_widget a:hover{color:#2396e6;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .sb_widget h3{color:#2c3e50}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area #lang_sel a{color:#a1b1bc; background:#ffffff; border:1px solid #ecf0f1}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area #lang_sel a:hover{color:#2c3e50;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .widget_recent_entries ul li{border-bottom:1px solid #ecf0f1}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .widget_recent_entries ul li a{color:#a1b1bc}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .widget_recent_entries ul li a:hover{color:#288bd0}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area #recentcomments li{border-bottom:1px solid #ecf0f1}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area #recentcomments li a{color:#2c3e50;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area #recentcomments li a:hover{color:#2396e6;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .rd_widget_recent_entries li{border-bottom:1px solid #ecf0f1}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .w_comment a{color:#a1b1bc;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .w_comment a:hover{color:#288bd0;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .widget_recent_entry h4 a{color:#2c3e50;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .widget_recent_entry h4 a:hover{color:#288bd0;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .widget_archive ul li,#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .widget_meta ul li{border-bottom:1px solid #ecf0f1}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .widget_archive ul li a,#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .widget_meta ul li a{color:#a1b1bc;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .widget_archive ul li a:hover,#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .widget_meta ul li a:hover{color:#288bd0;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .page_item a, #header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .menu-item a{border-bottom:1px solid #ecf0f1; color:#a1b1bc;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .page_item a:hover, #header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .menu-item a:hover,#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .current_page_item a,#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .current_page_item a{color:#288bd0; }#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .page_item a:before, #header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area .menu-item a:before { color:#020f2a;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area #wp-calendar caption{background:#2c3e50; color:#ffffff}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area #wp-calendar{border:1px solid #ecf0f1}#wp-calendar th{color:#020f2a;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area #wp-calendar tbody td a{color:#fff; background:#020f2a;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area #wp-calendar tbody td a:hover{color:#fff; background:#288bd0;}#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area #wp-calendar td#next a:hover:after,#header_container nav .rd_megamenu .mm_widget_area .rd_megamenu_widget_area #wp-calendar td#prev a:hover:after{background:#288bd0;}body{font-family:Roboto; font-size:16px; font-weight:300; line-height:16px; }h1{font-family:Roboto; font-size:34px; font-weight:300; line-height:42px; }h2{font-family:Roboto; font-size:24px; font-weight:400; line-height:26px; }h3{font-family:Roboto; font-size:20px; font-weight:300; line-height:24px; }h4{font-family:Roboto Condensed; font-size:18px; font-weight:300; line-height:24px; }h5{font-family:Roboto; font-size:16px; font-weight:300; line-height:24px; }h6{font-family:Roboto; font-size:14px; font-weight:300; line-height:24px; }body,#jprePercentage{color:#666666}body a,.hl_color,#sidebar #search input[type=submit]:hover,.wpb_widgetised_column #search input[type=submit]:hover,.strong_colored strong{color:#288bd0}body a:hover{color:#2396e6}h1,h2,h3,h4,h5,h6{color:#2c3e50}.partners_left, .partners_right{background:#2c3e50}.def_section,blockquote{background:#ffffff}#to_top:hover,.b-read-now:hover{background:#288bd0}::-webkit-input-placeholder{color:#a1b1bc}:-moz-placeholder{color:#a1b1bc}::-moz-placeholder{color:#a1b1bc}:-ms-input-placeholder{color:#a1b1bc}#sidebar #search input[type=submit],.wpb_widgetised_column #search input[type=submit]{color:#a1b1bc}input[type=text], input[type=email], input[type=password], textarea,#coupon_code{color:#a1b1bc; border:1px solid #eceef0; background:#ffffff;}input[type="checkbox"]{color:#ffffff; border:1px solid #eceef0; background:#ffffff;}input[type=checkbox]:checked{color:#ffffff; border:1px solid #2396e6; background:#2396e6;}.flex-direction-nav li a{color:#2c3e50; background:#ffffff;}.wpb_text_column ol li:before{background:#666666}.wpb_text_column ol li:hover:before{background:#288bd0}blockquote{ border:1px solid #ecf0f1; }blockquote:before,.post-password-form input[type=submit]{ background:#288bd0; }.code_box_ctn{ background:#f9fafb; }.wp-caption{ background:#f9fafb; border:1px solid #ecf0f1; }.tp-caption a {color: #fff;}.tp-caption a:hover { color: #fff;}.tp-bannertimer{background: #2396e6; background: -moz-linear-gradient(left,  #2396e6 0%, #2396e6 100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%,#2396e6), color-stop(100%,#2396e6)); background: -webkit-linear-gradient(left,  #2396e6 0%,#2396e6 100%); background: -o-linear-gradient(left,  #2396e6 0%,#2396e6 100%); background: -ms-linear-gradient(left,  #2396e6 0%,#2396e6 100%); background: linear-gradient(to right,  #2396e6 0%,#2396e6 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#2396e6", endColorstr="#2396e6",GradientType=1 );} .page_title_ctn{border-bottom:1px solid #ecf0f1;  }.page_title_ctn h1{color:#125ea8; }#crumbs a,#crumbs span{color:#125ea8; }.rd_child_pages{color:#a1b1bc; border:1px solid #a1b1bc; background:#ffffff;}.search_results strong{color:#288bd0; }.search_sf .rd_search_sc #search input[type=submit]{background:#2c3e50 !important;}.search_sf .rd_search_sc #search input[type=submit]:hover{background:#2396e6 !important;}.post_single .post-title h2 a,.blog_related_post .post-title h2 a,.logged-in-as a{color:#2c3e50}.post_single .post-title h2 a:hover,.blog_related_post .post-title h2 a:hover{color:#2396e6}.mejs-container .mejs-controls,.audio_ctn{background:#666666 !important;}.mejs-controls .mejs-time-rail .mejs-time-current{background:#2c3e50 !important; }.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current{background:#2396e6 !important; }.post_quote_text,.post_quote_author,.post_single_business .post_quote_text:after{background:#288bd0; color:#ffffff!important;}.post-info a{color:#666666}.post_single .post-info a:hover{color:#2396e6}.single_post_navigation,.post-info{border-bottom:1px solid #ecf0f1}.single_post_navigation_bottom{border-top:1px solid #ecf0f1}.tags_icon{background:#2c3e50; color:#ffffff;}.single_post_tags{border:1px solid #eceef0; background:#ffffff;}.shareicons_icon{background:#288bd0; color:#ffffff;}.single_post_share_icon{border:1px solid #eceef0; background:#ffffff;}.single_post_share_icon .share-box li a{color:#a1b1bc;}.single_post_share_icon .share-box li a:hover{color:#288bd0 !important;}#author-bio{border:1px solid #eceef0; background:#f9fafb; color:#a1b1bc; box-shadow:0 0px 0px #ffffff, 0 4px 0 -1px #ffffff, 0 0px 0px 0px #ffffff,0 0px 0px #ffffff, 0 4px 0 0px #ecf0f1, 0px 0px 0px 0px #ffffff;}#author-info h3{color:#2c3e50;}.author_posts_link{color:#a1b1bc;}.author_posts_link:hover{color:#288bd0;}.comment_ctn{border:1px solid #eceef0; background:#ffffff; color:#a1b1bc; box-shadow:0 0px 0px #ffffff, 0 4px 0 -1px #ffffff, 0 0px 0px 0px #ffffff,0 0px 0px #ffffff, 0 4px 0 0px #ecf0f1, 0px 0px 0px 0px #ffffff;}#business_comments #comments ul li .details span.Reply a{border:1px solid #eceef0; background:#ffffff; color:#a1b1bc;}.comment_count h3 a{color:#2c3e50}#comments ul li .details span.author a,#comments ul li .details span.author{color:#2c3e50}#comments ul li .details span.date a{color:#a1b1bc}#comments ul li .details span.Reply a{background:#a1b1bc; color:#ffffff}#comments ul li .details span.Reply a:hover{background:#222533; color:#ffffff}#business_comments #comments ul li .comment_ctn{border-bottom:1px solid #ecf0f1;}#comments > ul > li ul{border-left:1px solid #ecf0f1}#comments ul li li .comment_ctn:before{background:#ecf0f1;}input.single_post_author,input.single_post_email,input.single_post_url,.single_post_comment{background:#f9fafb}input.single_post_author:focus,input.single_post_email:focus,input.single_post_url:focus,.single_post_comment:focus{background:#ffffff}#add-comment input#submit{background:#2c3e50; color:#ffffff}#add-comment input#submit:hover{background:#2396e6; color:#ffffff}#business_comments #add-comment input#submit,#respond input#submit{background:#288bd0; color:#ffffff}#business_comments #add-comment input#submit:hover,,#respond input#submit:hover{background:#2396e6; color:#ffffff}#business_comments #comments ul li .details span.Reply a:hover{background:#288bd0 !important; color:#ffffff; border-color:#288bd0;}.blog_related_post .more-link{border:1px solid #2c3e50; color:#2c3e50; background:#ffffff;}.blog_related_post .more-link:hover{color:#ffffff; background:#2c3e50;}.cbp_type03 .rp_left,.cbp_type03 .rp_right{background:#2c3e50}.cbp_type03 .rp_left:hover,.cbp_type03 .rp_right:hover{background:#2396e6}.cbp_type03 .blog_related_post .more-link:hover{background:#2396e6; border-color:#2396e6;}.cbp_type05 .rp_left,.cbp_type05 .rp_right,.cbp_type08 .rp_left,.cbp_type08 .rp_right{background:#288bd0}.cbp_type05 .rp_left:hover,.cbp_type05 .rp_right:hover,.cbp_type08 .rp_left:hover,.cbp_type08 .rp_right:hover{background:#222533}.cbp_type05 .carousel_recent_post .blog_box_content,.cbp_type08 .carousel_recent_post .blog_box_content{color:#666666}.cbp_type05 .carousel_recent_post h5.widget_post_title a,.cbp_type08 .carousel_recent_post h5.widget_post_title a{color:#2c3e50}.cbp_type05 .carousel_recent_post:hover .blog_box_content,.cbp_type05 .blog_post_link_ctn,.cbp_type08 .carousel_recent_post:hover .blog_box_content,.cbp_type08 .blog_post_link_ctn{background:#2c3e50; color:#a1b1bc;}.cbp_type05 .carousel_recent_post:hover h5.widget_post_title a,.cbp_type08 .carousel_recent_post:hover h5.widget_post_title a{color:#ffffff}.cbp_type06 .rp_left,.cbp_type06 .rp_right{background:#666666}.cbp_type06 .rp_left:hover,.cbp_type06 .rp_right:hover{background:#2c3e50}.cbp_type06 .carousel_recent_post .blog_box_content{color:#666666}.cbp_type06 .carousel_recent_post h5.widget_post_title a{color:#2c3e50}.cbp_type06 a.more-link{background:#666666; color:#fff;}.cbp_type06 a.more-link:after{background:#2c3e50; color:#fff;}.cbp_type06 a.more-link:hover{background:#288bd0; color:#fff;}.cbp_type06 a.more-link:hover:after{
+background: rgba(0, 0, 0, 0.21); color:#fff;}.sp_left:hover,.sp_right:hover{background:#288bd0; border-color:#288bd0;}.sb_widget h3{color:#2c3e50}.sb_widget > h3:before{border-top:7px solid #288bd0; border-bottom:7px solid #2396e6;}#sidebar #lang_sel a,.wpb_widgetised_column #lang_sel a{color:#666666; background:#ffffff; border:1px solid #ecf0f1}#sidebar #lang_sel a:hover,.wpb_widgetised_column #lang_sel a:hover{color:#2c3e50;}#sidebar .widget_recent_entries ul li,.wpb_widgetised_column .widget_recent_entries ul li{border-bottom:1px solid #ecf0f1}#sidebar .widget_recent_entries ul li a,.wpb_widgetised_column .widget_recent_entries ul li a{color:#666666}#sidebar .widget_recent_entries ul li a:hover,.wpb_widgetised_column .widget_recent_entries ul li a:hover{color:#288bd0}#sidebar #recentcomments li,.wpb_widgetised_column #recentcomments li{border-bottom:1px solid #ecf0f1}#sidebar #recentcomments li a,.wpb_widgetised_column #recentcomments li a,#sidebar .tweets li a,.wpb_widgetised_column .tweets li a{color:#2c3e50;}#sidebar #recentcomments li a:hover,.wpb_widgetised_column  #recentcomments li a:hover{color:#2396e6;}#sidebar .rd_widget_recent_entries li,.wpb_widgetised_column .rd_widget_recent_entries li,#sidebar  .tweets li,.wpb_widgetised_column .tweets li{border-bottom:1px solid #ecf0f1}#sidebar .tagcloud a ,.wpb_widgetised_column .tagcloud a {border:1px solid #ecf0f1; color:#666666}#sidebar .tagcloud a:hover,.wpb_widgetised_column .tagcloud a:hover{background:#288bd0; border-color:#288bd0; color:#ffffff;}#sidebar .w_comment a,.wpb_widgetised_column .w_comment a{color:#666666;}#sidebar .w_comment a:hover,.wpb_widgetised_column .w_comment a:hover{color:#288bd0;}#sidebar .widget_recent_entry h4 a,.wpb_widgetised_column .widget_recent_entry h4 a{color:#2c3e50;}#sidebar .widget_recent_entry h4 a:hover,.wpb_widgetised_column .widget_recent_entry h4 a:hover{color:#288bd0;}#sidebar .widget_archive ul li,#sidebar .widget_meta ul li,.wpb_widgetised_column .widget_archive ul li,.wpb_widgetised_column .widget_meta ul li{border-bottom:1px solid #ecf0f1}#sidebar .widget_archive ul li a,#sidebar .widget_meta ul li a,.wpb_widgetised_column  .widget_archive ul li a,.wpb_widgetised_column .widget_meta ul li a{color:#666666;}#sidebar .widget_archive ul li a:hover,#sidebar .widget_meta ul li a:hover,.wpb_widgetised_column .widget_archive ul li a:hover,.wpb_widgetised_column .widget_meta ul li a:hover{color:#288bd0;}#sidebar .page_item a, #sidebar .menu-item a,.wpb_widgetised_column .page_item a,.wpb_widgetised_column .menu-item a{border-bottom:1px solid #ecf0f1; color:#666666;}#sidebar .page_item a:hover, #sidebar .menu-item a:hover,#sidebar .current_page_item a,#sidebar .current_page_item a,.wpb_widgetised_column .page_item a:hover,.wpb_widgetised_column .menu-item a:hover,.wpb_widgetised_column .current_page_item a{color:#288bd0; }#sidebar .page_item a:before, #sidebar .menu-item a:before,.wpb_widgetised_column .page_item a:before,.wpb_widgetised_column .menu-item a:before{ color:#288bd0;}#wp-calendar caption{background:#2c3e50; color:#ffffff}#wp-calendar{border:1px solid #ecf0f1}#wp-calendar th{color:#288bd0;}#wp-calendar tbody td a{color:#fff; background:#288bd0;}#wp-calendar tbody td a:hover{color:#fff; background:#288bd0;}#wp-calendar td#next a:hover:after,#wp-calendar td#prev a:hover:after{background:#288bd0;}.rd_widget_recent_entries .thumbnail a:before,.port_tn a:before,.rd_widget_recent_entries_f .thumbnail a:before{background:#288bd0;}.single_port_navigation,.port_details_full_information .item_details_info{border-bottom:1px solid #ecf0f1;}.all_projects_btn{color:#666666;}.next_project{border:1px solid #ecf0f1; background:#ecf0f1; color:#2c3e50;}.next_project:hover{border:1px solid #222533; background:#222533; color:#fff;}.previous_project{border:1px solid #666666; background:#ffffff; color:#666666;}.previous_project:hover{border:1px solid #2396e6; background:#2396e6; color:#fff;}.port_details_subtitle{color:#288bd0;}.port_meta{border-bottom:1px solid #ecf0f1;}.next_project{border-bottom:1px solid #ecf0f1;}.port_vp a{background:#2c3e50;}.port_vp a:hover{background:#2396e6; color:#fff;}.single_staff_meta{border-top:1px solid #ecf0f1;}#member_email a:hover, .sc-share-box #member_email a, .single_staff_social #member_email a,.share_icons_business .share-box #member_email a{background:#288bd0;}.product_filtering {border-bottom:1px solid #ecf0f1}.filter_param,.filter_param li ul{background:#ffffff; border:1px solid #eceef0; color:#a1b1bc;}.filter_param strong{color:#2c3e50;}.current_li:after{border-left:1px solid #eceef0;}.filter_param.filter_param_sort{background:#a1b1bc; border:1px solid #a1b1bc;}.filter_param.filter_param_sort a{color:#ffffff}.filter_param.filter_param_order a,.filter_param.filter_param_count a{color:#a1b1bc}.filter_param.filter_param_order a:hover,.filter_param.filter_param_count a:hover{color:#222533}.shop_two_col,.shop_three_col,.shop_four_col,.caroufredsel_wrapper .inner_product,.woocommerce .products li{color:#a1b1bc; background:#ffffff; border:1px solid #eceef0;}.custom_cart_button a{color:#a1b1bc;}.custom_cart_button a:hover{color:#222533;}.product_box {border-top:1px solid #eceef0; border-bottom:1px solid #eceef0;}.product_box h3{color:#2c3e50;}.product_box h3:hover{color:#288bd0;}.product_box .price{color:#a1b1bc;}.product_box .price del{color:#a1b1bc !important;}.product_box .price ins{color:#288bd0;}.adding_to_cart_working .icon_status_inner:before{color:#288bd0;}.adding_to_cart_completed .icon_status_inner:before{color:#2396e6;}.single_product_main_image div,.single_products_thumbnails img,.single_product_navigation .previous_product,.single_product_navigation .next_product {border:1px solid #ecf0f1 }.single_product_navigation .previous_product:hover,.single_product_navigation .next_product:hover{border:1px solid #222533; background:#222533; color:#ffffff }.single_products_thumbnails img.selected{border:1px solid #288bd0 }.product_nav_left:hover,.product_nav_right:hover{background:#288bd0 }.product_title.entry-title,.woocommerce-tabs ul li a,.related h2,.single_product_navigation .previous_product,.single_product_navigation .next_product,.woocommerce-page #reviews #comments ol.commentlist li .comment-text p.meta strong, .woocommerce-page #reviews #comments h2,.show_review_form.button {color:#2c3e50 }.summary.entry-summary .price,.summary.entry-summary .price del,.show_review_form.button,.woocommerce-page #reviews #comments ol.commentlist li .comment-text p.meta{color:#666666 }.summary.entry-summary .price ins,.woocommerce-product-rating .woocommerce-review-link,.custom_cart_button .button.add_to_cart_button.product_type_simple.added{color:#288bd0 }.woocommerce-product-rating .woocommerce-review-link:hover{color:#2396e6 }button.single_add_to_cart_button.button.alt{color:#2c3e50; background:#ffffff; border:2px solid #2c3e50; }button.single_add_to_cart_button.button.alt:hover{color:#ffffff; background:#2396e6; border:2px solid #2396e6; }.single_product_navigation{border-top:1px solid #ecf0f1 }.related_left, .related_right,.upsells_left, .upsells_right{border:1px solid #eceef0; color:#a1b1bc ; background:#ffffff;}.related_left:hover, .related_right:hover,.upsells_left:hover, .upsells_right:hover{border:1px solid #2396e6; color:#ffffff ; background:#2396e6;}.woo-share-box ul li a,.woo_img_next,.woo_img_prev{background:#ecf0f1; color:#666666 ;}.woo_img_next:hover,.woo_img_prev:hover{background:#222533; color:#ffffff ;}.woocommerce-tabs .tabs li a{border-right:1px solid #ecf0f1 }.woocommerce-tabs,.woocommerce-tabs li.active{border-left:1px solid #ecf0f1 }.woocommerce-tabs li.active{border-bottom:1px solid #ffffff }.woocommerce-tabs .tabs li a{border-top:1px solid #ecf0f1 }.woocommerce-tabs .panel{border:1px solid #ecf0f1 }.woocommerce-page #reviews #comments h2,#reviews #comments ol.commentlist li{border-bottom:1px solid #ecf0f1 !important; }.chosen-container-single .chosen-single,#rd_login_form .inline,.product-description a,.shipping td:last-child{color:#666666}.chosen-container-single .chosen-single,.select2-drop{background:#ffffff}.woocommerce-cart .cart_totals h2, .woocommerce-cart form h2, .woocommerce-checkout .woocommerce h2,.woocommerce form .form-row label, .woocommerce-page form .form-row label,.checkout_steps .active_step,.product-qty,.rd_order_total,.country_to_state,.cross-sells h2,.woocommerce-cart .cart_totals,.shop_table.order_details tfoot,.woocommerce .order_details li strong, .woocommerce-page .order_details li strong{color:#2c3e50}.woocommerce-cart .cart_totals strong, .rd_order_total .total strong,.shop_table.order_details tfoot .amount,.order_complete_ctn h3,.customer_details dd{color:#288bd0;}.woocommerce-checkout input[type=text],.woocommerce-checkout input[type=email],.woocommerce-checkout input[type=password],.woocommerce-checkout textarea,.form-row .chosen-container-single .chosen-single,.woocommerce-checkout .product-name img,.order_and_total_wrapper,.user_current_cart,.woocommerce-page table.cart img,.woocommerce-message, .woocommerce-error, .woocommerce-info,.country_to_state,.shop_table.order_details,.woocommerce .order_details, .woocommerce-page .order_details,#calc_shipping_state,.woocommerce-cart #coupon_code,.woocommerce form .form-row input.input-text,.country_to_state .select2-choice,.state_select .select2-choice,#calc_shipping_state .select2-choice,.select2-drop-active,#braintree-cc-exp-month, #braintree-cc-exp-year{border:1px solid #ecf0f1; color: #666666;}.woocommerce-page input[type=submit],.customer_details_next,.rd_create_acc,#place_order,.rd_coupon_form .alt2,.coupon input.button.alt2,#review_form  input[type=submit],.woocommerce .addresses .title .edit, .woocommerce-page .addresses .title .edit {background:#288bd0; color:#ffffff;}.cart_details_back,.customer_details_back,#rd_login_form input[type=submit],.rd_guest_acc,.update_cart input.checkout-button.button,.cart-collaterals .shipping_calculator .button,.create_acc_done,.wc-backward{background:#666666; color:#ffffff;}.shop_table thead{background:#ecf0f1; color:#2c3e50;}ul.payment_methods.methods li{border-bottom:1px solid #ecf0f1;}.woocommerce-page .order_details li{border-right:1px solid #ecf0f1;}.cart_totals tr td,.cart_totals tr th{border:1px solid #ecf0f1 !important;}.cart_totals tr td{border-left:none!important;}.cart_totals tr:first-child td,.cart_totals tr:first-child th{border-bottom:none!important;}.cart_totals tr:last-child td,.cart_totals tr:last-child th{border-top:none!important;}.show_review_form.button:hover{color:#222533;}.woocommerce-page input[type=submit]:hover,.customer_details_next:hover,.rd_create_acc:hover,#place_order:hover,.rd_coupon_form .alt2:hover,.coupon input.button.alt2:hover,#review_form input[type=submit]:hover,.woocommerce .addresses .title .edit:hover, .woocommerce-page .addresses .title .edit:hover{background:#2396e6; color:#ffffff;}.cart_details_back:hover,.customer_details_back:hover,.rd_guest_acc:hover,#rd_login_form input[type=submit]:hover,.update_cart input.checkout-button.button:hover,.cart-collaterals .shipping_calculator .button:hover,.wc-backward:hover{background:#222533; color:#ffffff;}.my_account_orders{border:1px solid #ecf0f1;}#sidebar #searchform div #s,.wpb_widgetised_column #searchform div #s{background:#ffffff !important; border:1px solid #eceef0; color:#a1b1bc}#s::-webkit-input-placeholder{color:#a1b1bc}#s:-moz-placeholder{color:#a1b1bc}#s::-moz-placeholder{color:#a1b1bc}#s:-ms-input-placeholder{color:#a1b1bc}.widget_product_search input[type=submit]{background:none!important; color:#a1b1bc}.widget_product_search input[type=submit]:hover{background:none!important; color:#2396e6}.ui-slider-handle.ui-state-default.ui-corner-all{background:#288bd0}.ui-slider-range.ui-widget-header.ui-corner-all{background:#ecf0f1}.price_slider.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all{border:1px solid #ecf0f1}.price_slider_amount button.button{color:#ffffff; background:#666666;}#sidebar .price_label,.wpb_widgetised_column .price_label{color:#666666}.price_label .to,.price_label .from{color:#2c3e50}#sidebar .widget_price_filter .price_slider_amount .button:hover,.wpb_widgetised_column .widget_price_filter .price_slider_amount .button:hover{background:#222533; color:#ffffff;}.product_list_widget a{color:#2c3e50}ul.product_list_widget li{border-bottom:1px solid #ecf0f1}.product_list_widget span.amount{color:#666666}.product_list_widget ins span.amount{color:#288bd0}#sidebar .cat-item a,.wpb_widgetised_column .cat-item a{color:#2c3e50}#sidebar .cat-item a:hover,.wpb_widgetised_column .cat-item a:hover{color:#2396e6}#sidebar .cat-item,.wpb_widgetised_column .cat-item,#sidebar .cat-item .children,.wpb_widgetised_column .cat-item .children{border-top:1px solid #ecf0f1}#sidebar .cat-item .children .children a,.wpb_widgetised_column .cat-item .children .children a{color:#666666}#sidebar .cat-item .children .children a:hover,.wpb_widgetised_column .cat-item .children .children a:hover{color:#222533}#sidebar .cat-got-children:after,.wpb_widgetised_column .cat-got-children:after{border-color:#666666; color:#666666;}#sidebar .product_list_widget span.amount,.wpb_widgetised_column .product_list_widget span.amount{color:#666666}#sidebar .product_list_widget ins span.amount,.wpb_widgetised_column .product_list_widget ins span.amount{color:#288bd0}#header_container .cart-notification{background:#222533; border-left:5px solid #288bd0;  }#header_container .cart-notification{color:#666666; }#header_container .cart-notification span{color:#ffffff; }.rd_tabs li,.rd_tabs.horizontal .tabs-container{background:#ffffff; }.rd_tabs.horizontal .tabs li,.rd_tabs.horizontal .tabs-container{border:1px solid #ecf0f1; }.rd_tabs.horizontal .tabs li:last-child{border-right:1px solid #ecf0f1 !important; }.rd_tabs.horizontal .active{border-bottom:1px solid #ffffff !important; }.rd_tabs.horizontal.rd_tab_1 li a,.rd_tabs.horizontal.rd_tab_2 li a,.rd_tabs.horizontal.rd_tab_4 li a{color:#666666; }.rd_tabs.horizontal.rd_tab_1 li a:hover,.rd_tabs.horizontal.rd_tab_2 li a:hover,.rd_tabs.horizontal.rd_tab_4 li a:hover{color:#2c3e50; }.rd_tabs.horizontal.rd_tab_1 .active {border-top:3px solid #288bd0; }.rd_tabs.horizontal.rd_tab_1 .active a,.rd_tabs.horizontal.rd_tab_2 .active a,.rd_tabs.horizontal.rd_tab_1 .active a:hover,.rd_tabs.horizontal.rd_tab_2 .active a:hover{color:#288bd0; }.rd_tabs.horizontal.rd_tab_2 .active {border-top:4px solid #288bd0; }.rd_tabs.horizontal.rd_tab_3 .tabs li{background:#666666; }.rd_tabs.horizontal.rd_tab_3 .tabs li a{color:#ffffff; }.rd_tabs.horizontal.rd_tab_3 .tabs li.active {background:#ffffff; }.rd_tabs.horizontal.rd_tab_3 .tabs li.active a{color:#2c3e50; }.rd_tabs.horizontal.rd_tab_4 li.active a{color:#2c3e50; }.rd_tabs.rd_vtab_1 #tabs{border-top:1px solid #ecf0f1; }.rd_tabs.rd_vtab_1 li,.rd_tabs.rd_vtab_1 .tab_content{border:1px solid #ecf0f1; }.rd_tabs.rd_vtab_1 li{background:#f9fafb; }.rd_tabs.rd_vtab_1 li.active,.rd_tabs.rd_vtab_1 .tabs-container{background:#ffffff; }.rd_tabs.rd_vtab_1.rd_vtab_left li.active {border-left:1px solid rgba(0,0,0,0); border-right:1px solid #ffffff;}.rd_tabs.rd_vtab_1.rd_vtab_right li.active {border-right:1px solid rgba(0,0,0,0); border-left:1px solid #ffffff;}.rd_tabs.vertical li a{color:#666666;}.rd_tabs.rd_vtab_1.vertical.rd_vtab_left li a{border-left:5px solid#f9fafb;}.rd_tabs.rd_vtab_1.vertical.rd_vtab_right li a{border-right:5px solid#f9fafb;}.rd_tabs.rd_vtab_1.vertical.rd_vtab_left li.active a{color:#2396e6; border-left:5px solid#288bd0;}.rd_tabs.rd_vtab_1.vertical.rd_vtab_right li.active a{color:#2396e6; border-right:5px solid#288bd0;}.rd_tabs.rd_vtab_2 li{border-bottom:1px solid #ecf0f1; }.rd_tabs.rd_vtab_2 li.active a{color:#288bd0; }.rd_tabs.rd_vtab_2 li{border-bottom:1px solid #ecf0f1; }.rd_tabs.rd_vtab_2.rd_vtab_left .tabs-container{border-left:1px solid #ecf0f1; }.rd_tabs.rd_vtab_2.rd_vtab_left .tab_content{border-left:1px solid #ecf0f1; background:#ffffff;}.rd_tabs.rd_vtab_2.rd_vtab_right .tab_content{border-right:1px solid #ecf0f1; background:#ffffff;}.rd_clear_alert{border:1px solid #ecf0f1; }.thefox_bigloader .loader_button{background:#21C2F8; }#coming_soon_form input[type=button]{background:#1abc9c; }#coming_soon_form input[type=button]:hover{background:#21C2F8; }.thefox_bigloader .loader_tophalf{background: -moz-linear-gradient(left, rgba(52, 192, 191, 0.5) 0%, #1abc9c 100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(52, 192, 191, 0.5)) color-stop(100%,#1abc9c)); background: -webkit-linear-gradient(left, rgba(52, 192, 191, 0.5) 0%,#1abc9c 100%); background: -o-linear-gradient(left, rgba(52, 192, 191, 0.5) 0%,#1abc9c 100%); background: -ms-linear-gradient(left, rgba(52, 192, 191, 0.5) 0%,#1abc9c 100%); background: linear-gradient(to right, rgba(52, 192, 191, 0.5) 0%,#1abc9c 100%);}.thefox_bigloader .loader_bottomhalf{background: -moz-linear-gradient(left, rgba(52, 192, 191, 0.5) 1%, rgba(77, 196, 226, 0) 100%); background: -webkit-gradient(linear, left top, right top, color-stop(1%,rgba(52, 192, 191, 0.5)), color-stop(100%,rgba(77, 196, 226, 0))); background: -webkit-linear-gradient(left, rgba(52, 192, 191, 0.5) 1%,rgba(77, 196, 226, 0) 100%); background: -o-linear-gradient(left, rgba(52, 192, 191, 0.5) 1%,rgba(77, 196, 226, 0) 100%); background: -ms-linear-gradient(left, rgba(52, 192, 191, 0.5) 1%,rgba(77, 196, 226, 0) 100%); background: linear-gradient(to right, rgba(52, 192, 191, 0.5) 1%,rgba(77, 196, 226, 0)  100%);}#jpreOverlay .thefox_bigloader .loader_button{background:#288ad0; }#jpreOverlay .thefox_bigloader .loader_tophalf{background: -moz-linear-gradient(left, rgba(77, 196, 226, 0.5) 0%, #288ad0 100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(77, 196, 226, 0.5)) color-stop(100%,#288ad0)); background: -webkit-linear-gradient(left, rgba(77, 196, 226, 0.5) 0%,#288ad0 100%); background: -o-linear-gradient(left, rgba(77, 196, 226, 0.5) 0%,#288ad0 100%); background: -ms-linear-gradient(left, rgba(77, 196, 226, 0.5) 0%,#288ad0 100%); background: linear-gradient(to right, rgba(77, 196, 226, 0.5) 0%,#288ad0 100%);}#jpreOverlay .thefox_bigloader .loader_bottomhalf{background: -moz-linear-gradient(left, rgba(77, 196, 226, 0.5) 1%, rgba(77, 196, 226, 0) 100%); background: -webkit-gradient(linear, left top, right top, color-stop(1%,rgba(77, 196, 226, 0.5)), color-stop(100%,rgba(77, 196, 226, 0))); background: -webkit-linear-gradient(left, rgba(77, 196, 226, 0.5) 1%,rgba(77, 196, 226, 0) 100%); background: -o-linear-gradient(left, rgba(77, 196, 226, 0.5) 1%,rgba(77, 196, 226, 0) 100%); background: -ms-linear-gradient(left, rgba(77, 196, 226, 0.5) 1%,rgba(77, 196, 226, 0) 100%); background: linear-gradient(to right, rgba(77, 196, 226, 0.5) 1%,rgba(77, 196, 226, 0)  100%);}#jpreBar {background: #21c2f8; background: -moz-linear-gradient(left,  #21c2f8 0%, #2b3547 100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%,#21c2f8), color-stop(100%,#2b3547)); background: -webkit-linear-gradient(left,  #21c2f8 0%,#2b3547 100%); background: -o-linear-gradient(left,  #21c2f8 0%,#2b3547 100%); background: -ms-linear-gradient(left,  #21c2f8 0%,#2b3547 100%); background: linear-gradient(to right,  #21c2f8 0%,#2b3547 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#21c2f8", endColorstr="#2b3547",GradientType=1 );} #preloader_3:before{background:#288bd0}#preloader_3:after{background:#288bd0}@-webkit-keyframes preloader_3_before { 0% {transform: translateX(0px) rotate(0deg)}  50% {transform: translateX(50px) scale(1.2) rotate(260deg); background:#288bd0;border-radius:0px;}  100% {transform: translateX(0px) rotate(0deg)}} @keyframes preloader_3_before {  0% {transform: translateX(0px) rotate(0deg)}   50% {transform: translateX(50px) scale(1.2) rotate(260deg); background:#288bd0;border-radius:0px;}      100% {transform: translateX(0px) rotate(0deg)}} @-webkit-keyframes preloader_3_after {  0% {transform: translateX(0px)}   50% {transform: translateX(-50px) scale(1.2) rotate(-260deg); background:#288bd0; border-radius:0px;}    100% {transform: translateX(0px)}} @keyframes preloader_3_after {    0% {transform: translateX(0px)}    50% {transform: translateX(-50px) scale(1.2) rotate(-260deg);background:#288bd0;border-radius:0px;}   100% {transform: translateX(0px)}}#footer_bg,#footer{background:#020f2a; }#footer,#footer .cat-item a{color:#ffffff; }#footer .widget h2,#footer .widget_recent_entry h4 a{color:#2f90cc; }.footer_type_3 .widget h2,.footer_type_8 .widget h2{border-left:5px solid #288bd0; }#footer a{color:#288bd0; }#footer a:hover{color:#288bd0; }#footer .tagcloud a{border:1px solid #ffffff; color:#ffffff; }#footer .tagcloud a:hover{border:1px solid #288bd0; background:#288bd0 !important;  color:#ffffff;}#footer .cat-item a,#footer .children .cat-item a{border-top:1px solid transparent; border-color:transparent !important;}#footer .widget_recent_entries li{border-bottom:1px solid transparent; border-color:transparent !important;}.footer_type_9{border-top:1px solid transparent;}.footer_type_5{border-top:10px solid transparent;}.footer_type_10 .widget_line .small_l_left{border-top:3px solid #288bd0;}#footer .widget_recent_entries ul li{border-bottom:1px solid transparent}#footer .widget_recent_entries ul li a{color:#ffffff}#footer .widget_recent_entries ul li a:hover{color:#288bd0}#footer #recentcomments li{border-bottom:1px solid transparent}#footer #recentcomments li a{color:#2f90cc;}#footer #recentcomments li a:hover{color:#288bd0;}#footer .rd_widget_recent_entries li,#footer .rd_widget_recent_entries_f li{border-bottom:1px solid transparent}#footer .w_comment a{color:#ffffff;}#footer .w_comment a:hover{color:#288bd0;}#footer .widget_recent_entry h4 a{color:#2f90cc;}#footer .widget_recent_entry h4 a:hover{color:#288bd0;}#footer .widget_archive ul li,#footer .widget_meta ul li{border-bottom:1px solid transparent}#footer .widget_archive ul li a,#footer .widget_meta ul li a{color:#ffffff;}#footer .widget_archive ul li a:hover,#footer .widget_meta ul li a:hover{color:#288bd0;}#footer .page_item a, #footer .menu-item a{border-bottom:1px solid transparent; color:#ffffff;}#footer .page_item a:hover, #footer .menu-item a:hover,#footer .current_page_item a,#footer .current_page_item a{color:#288bd0; }#footer .page_item a:before, #footer .menu-item a:before { color:#288bd0;}#footer #wp-calendar caption{background:#2f90cc; color:#020f2a;}#footer #wp-calendar{border:1px solid transparent}#footer #wp-calendar th{color:#288bd0;}#footer #wp-calendar tbody td a{color:#fff; background:#288bd0;}#footer #wp-calendar tbody td a:hover{color:#fff; background:#288bd0;}#footer #wp-calendar td#next a:hover:after,#footer #wp-calendar td#prev a:hover:after{background:#288bd0;}#footer #lang_sel a{color:#ffffff; background:#020f2a; border:1px solid #ffffff}#footer #lang_sel a:hover{color:#2f90cc}#footer_coms {background:#020f2a; }#footer_coms a{color:#288bd0; }#footer_coms a:hover,#footer_coms .menu a:hover,.f_si_type1 a:hover,#footer_coms #to_top_img:hover{color:#ffffff; }#footer_coms,#footer_coms .menu a,#f_social_icons a,#footer_coms #to_top_img{color:#DDDDDD; }#footer_coms{border-top:1px solid #020f2a;}#footer_coms .f_si_type2 #to_top_img{background:#288bd0!important;}</style>
+<style type="text/css">/* MailChimp for WP - Checkbox Styles */
+.mc4wp-checkbox-contact-form-7 {
+  clear: both;
+  display: block;
+  position: static;
+  width: auto; }
+  .mc4wp-checkbox-contact-form-7 input {
+    float: none;
+    width: auto;
+    position: static;
+    margin: 0 6px 0 0;
+    padding: 0;
+    vertical-align: middle;
+    display: inline-block !important;
+    max-width: 21px;
+    -webkit-appearance: checkbox; }
+  .mc4wp-checkbox-contact-form-7 label {
+    float: none;
+    display: block;
+    cursor: pointer;
+    width: auto;
+    position: static; }
+</style>	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://marionettestudio.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="https://marionettestudio.com/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.1.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<style type="text/css" title="dynamic-css" class="options-output">.page_title_ctn{background-color:transparent;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="single single-post postid-9668 single-format-standard wpb-js-composer js-comp-ver-4.8.1 vc_responsive" >
+<div id="top_bg" class="menu_slide" >
+<div id="header_container">
+<!-- header -->
+<header  class="header_shadow nav_type_2 sticky_header  header_to_shrink clearfix" >
+<div class="wrapper">
+<!-- logo -->
+<div id="logo_img"><a href="https://marionettestudio.com"><img class="dark_logo desktop_logo" src="https://marionettestudio.com/wp-content/uploads/2016/01/logotype_final_outline_white_sub_text.png" alt="Marionette Studio" title="Marionette Studio"/><img class="white_logo desktop_logo" src="https://marionettestudio.com/wp-content/uploads/2016/01/logotype_final_outline_white_sub_text.png" alt="Marionette Studio" title="Marionette Studio"/><img class="dark_logo mobile_logo" src="https://marionettestudio.com/wp-content/uploads/2016/01/logotype_final_outline_white_sub_text.png" alt="Marionette Studio" title="Marionette Studio"/><img class="white_logo mobile_logo" src="https://marionettestudio.com/wp-content/uploads/2016/01/logotype_final_outline_white_sub_text.png" alt="Marionette Studio" title="Marionette Studio"/></a></div>
+
+
+
+<!-- logo END-->
+
+  
+  <!-- menu -->
+        <nav class="nav_type_2"><ul id="menu-mtt-main-menu" class="menu"><li class="   menu-item menu-item-type-post_type menu-item-object-page menu-item-10489 "><a href="https://marionettestudio.com/features/">Features</a></li>
+<li class="   menu-item menu-item-type-post_type menu-item-object-page menu-item-10439 "><a href="https://marionettestudio.com/pricing/">Pricing</a></li>
+<li class="   menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7603 "><a href="https://marionettestudio.com/learn-2d-animation/">Learn</a>
+<ul class="sub-menu">
+	<li class="   menu-item menu-item-type-post_type menu-item-object-page menu-item-7619 "><a href="https://marionettestudio.com/learn-2d-animation/animation-tutorials/">Video tutorials</a></li>
+	<li class="   menu-item menu-item-type-post_type menu-item-object-page menu-item-7616 "><a href="https://marionettestudio.com/learn-2d-animation/user-guide/">User guide</a></li>
+	<li class="   menu-item menu-item-type-post_type menu-item-object-page menu-item-8444 "><a href="https://marionettestudio.com/videos/">Videos</a></li>
+	<li class="   menu-item menu-item-type-post_type menu-item-object-page menu-item-8443 "><a href="https://marionettestudio.com/2d-animations/">2D Animations</a></li>
+</ul>
+</li>
+<li class="   menu-item menu-item-type-post_type menu-item-object-page menu-item-7722 "><a href="https://marionettestudio.com/blog/">Blog</a></li>
+<li class="   menu-item menu-item-type-post_type menu-item-object-page menu-item-10636 "><a href="https://marionettestudio.com/demo/">Demo</a></li>
+<li class="   menu-item menu-item-type-custom menu-item-object-custom menu-item-8383 "><a href="http://editor.marionettestudio.com/login">Login</a></li>
+<li class="   create_animation_main_menu menu-item menu-item-type-custom menu-item-object-custom menu-item-8078 "><a href="https://editor.marionettestudio.com/signup">START ANIMATING</a></li>
+</ul>      </nav>
+      <!-- menu END-->
+          </div>
+  </div>
+    </header>
+  <!-- header END-->
+  <style>.page_title_ctn {padding-top:43px; padding-bottom:43px;}</style> 
+<div class="section def_section">
+  <div class="wrapper section_wrapper">
+
+    <div id="posts" class=" left_posts ">
+                        
+      <!-- .post -->
+      
+    <div class="post post_single vc_row">
+<a href="https://marionettestudio.com/wp-content/uploads/2016/11/2d_animation.jpg" class="prettyPhoto "><div class='post-attachement'><img width="1200" height="565" src="https://marionettestudio.com/wp-content/uploads/2016/11/2d_animation-1200x565.jpg" class="attachment-blog_tn wp-post-image" alt="animation types for 2d games" /></a></div><div class='sep_25'></div>  <div class="post_ctn clearfix"> 
+    <!-- .title -->
+    <div class="post-title">
+      <h2><a href="https://marionettestudio.com/animation-types-for-2d-games/" title="Animation types for 2d games">
+        Animation types for 2d games        </a></h2>
+    </div>
+     <!-- .title END--> 
+     <!-- post-info-top -->
+    <div class="post-info">By <a href="https://marionettestudio.com/author/codrina/" title="Posts by Codrina" rel="author">Codrina</a>    |    <a href="https://marionettestudio.com/category/2016-trends/" rel="category tag">2016 Trends</a>, <a href="https://marionettestudio.com/category/2d-animation-for-games/" rel="category tag">2D animation for games</a>, <a href="https://marionettestudio.com/category/animation/" rel="category tag">Animation</a>, <a href="https://marionettestudio.com/category/animation-tips/" rel="category tag">Animation tips</a>    |    <a href="https://marionettestudio.com/animation-types-for-2d-games/#comments" class="comments-link" >2 comments</a>    |    14 November, 2016    |    <a href="#" class="zilla-likes" id="zilla-likes-9668" title="Like this"><span class="zilla-likes-count">3</span> <span class="zilla-likes-postfix"></span></a></div>
+    <!-- post-info END-->     
+    <!-- .entry -->    
+    <div class="entry">
+      <div id="blogPost">
+<p>Animations for 2d games can be more difficult than animations for movies because in video games the characters must interact with each other. In games every action is controlled by the user and the characters must respond to the action of the player. So, animation have to look good from every angle. That&#8217;s why the animators must know many animation types for their characters.</p>
+<p>Game animations should be short and the response to player commands must be instant. Also, the animations should communicate with the user and must transmit certain moods, such as joy, fear, excitement, etc. If you create animations for different types of creatures, giants, battles, etc. , you will need different types of animation like walking, running, fighting, etc.</p>
+<p>&nbsp;</p>
+<div id="attachment_9671" style="width: 760px" class="wp-caption aligncenter"><a href="http://marionettestudio.com/wp-content/uploads/2016/11/animations.jpg"><img class="size-full wp-image-9671" src="https://marionettestudio.com/wp-content/uploads/2016/11/animations.jpg" alt="2d animation types" width="750" height="391" /></a><p class="wp-caption-text">Image source: http://nvisionapp.com/eight-excellent-old-school-action-games-you-must-play-on-pc/</p></div>
+<p>&nbsp;</p>
+<p>In every game animators should create several basic animations for their characters:</p>
+<ul>
+<li>idle animation</li>
+<li>walk animation</li>
+<li>run animation</li>
+<li>fighting animation</li>
+<li>jump animation</li>
+<li>death animation</li>
+</ul>
+<p>&nbsp;</p>
+<h2>Animation types for 2d games:</h2>
+<p>&nbsp;</p>
+<h2><strong>Idle animation</strong></h2>
+<p>&nbsp;</p>
+<p>Idle animations are very popular in video games. These animations appear when the controlled character doesn&#8217;t do any action because player is not pressing any button.</p>
+<p>&nbsp;</p>
+<div id="attachment_9672" style="width: 650px" class="wp-caption aligncenter"><a href="http://marionettestudio.com/wp-content/uploads/2016/11/idle_12.gif"><img class="size-full wp-image-9672" src="https://marionettestudio.com/wp-content/uploads/2016/11/idle_12.gif" alt="idle animation for 2d games" width="640" height="629" /></a><p class="wp-caption-text">Image source: http://opengameart.org/content/2d-assassin-game-character-world-war-ll</p></div>
+<p>&nbsp;</p>
+<h2><strong>Walk animation</strong></h2>
+<p>&nbsp;</p>
+<p>Walk cycle is one type of animation that every animator should know. &#8220;In animation, a walk cycle is a series of frames or illustrations drawn in sequence that loop to create an animation of a walking character. The walk cycle is looped over and over, thus having to avoid animating each step again&#8221; (Wikipedia).</p>
+<p>&nbsp;</p>
+<div id="attachment_9675" style="width: 670px" class="wp-caption aligncenter"><a href="http://marionettestudio.com/wp-content/uploads/2016/11/3-walk-cycle.preview.jpg"><img class="size-full wp-image-9675" src="https://marionettestudio.com/wp-content/uploads/2016/11/3-walk-cycle.preview.jpg" alt="walking animation" width="660" height="264" /></a><p class="wp-caption-text">Image source: http://webneel.com/walk-cycle-animation</p></div>
+<p>&nbsp;</p>
+<h2><strong>Run animation</strong></h2>
+<p>&nbsp;</p>
+<p>Run cycle is used in all video games and is similar to animating a walk. When a character run its both feet leave the ground, then one foot take contact with ground, then follows passing step and at final the kickoff.</p>
+<div id="attachment_9677" style="width: 610px" class="wp-caption aligncenter"><a href="http://marionettestudio.com/wp-content/uploads/2016/11/running_cycle.gif"><img class="size-full wp-image-9677" src="https://marionettestudio.com/wp-content/uploads/2016/11/running_cycle.gif" alt="running animation" width="600" height="700" /></a><p class="wp-caption-text">Image source: http://giphy.com/search/run-cycle</p></div>
+<p>&nbsp;</p>
+<h2><strong>Fighting animation</strong></h2>
+<p>&nbsp;</p>
+<p>Fighting games are very popular and can be played by single player or multiple players that fight one against the other. In these type of games fighters of comparable strength fight in one-on-one battles.</p>
+<p>&nbsp;</p>
+<div id="attachment_9680" style="width: 597px" class="wp-caption aligncenter"><a href="http://marionettestudio.com/wp-content/uploads/2016/11/fighting.png"><img class="size-full wp-image-9680" src="https://marionettestudio.com/wp-content/uploads/2016/11/fighting.png" alt="fighting animation" width="587" height="361" /></a><p class="wp-caption-text">Image source: http://thevideogamenetwork.com/2013/08/2d-fighting-game-aquapazza-coming-to-north-america-this-holiday/</p></div>
+<p>&nbsp;</p>
+<h2><strong>Jump animation</strong></h2>
+<p>&nbsp;</p>
+<p>This type of animation is used in all video games. Jump animation can be also combined with other cycles like run cycle animation. In this animation type is very important to use the &#8220;Squash and Stretch&#8221; animation principle because the body compresses and extends in a more extreme manner. There can be multiple scenarios for jumping: jumping onto the box, jumping on and off a box, jumping of a box, etc.</p>
+<p>&nbsp;</p>
+<div id="attachment_9684" style="width: 650px" class="wp-caption aligncenter"><a href="http://marionettestudio.com/wp-content/uploads/2016/11/jumping.jpg"><img class="size-full wp-image-9684" src="https://marionettestudio.com/wp-content/uploads/2016/11/jumping.jpg" alt="jump animation" width="640" height="239" /></a><p class="wp-caption-text">Image source: http://pdp-jessdriver.blogspot.ro/2014/05/jump.html</p></div>
+<p>&nbsp;</p>
+<h2><strong>Death animation</strong></h2>
+<p>&nbsp;</p>
+<p>This is a must animation type that any animator should know to make it. Death animation will play when a character or both dies, when a player is killed by his enemy, when a character explodes, etc.</p>
+<p>&nbsp;</p>
+<div id="attachment_9687" style="width: 390px" class="wp-caption aligncenter"><a href="http://marionettestudio.com/wp-content/uploads/2016/11/cat-ninja-dying-sprite-vector-5340534.jpg"><img class="size-full wp-image-9687" src="https://marionettestudio.com/wp-content/uploads/2016/11/cat-ninja-dying-sprite-vector-5340534.jpg" alt="death animation" width="380" height="400" /></a><p class="wp-caption-text">Image source: https://www.vectorstock.com/royalty-free-vectors/2d-game-character-vectors</p></div>
+<h2></h2>
+<h2></h2>
+<h2>Biblography:</h2>
+<p>&nbsp;</p>
+<p>I listed some websites that have helped me to make this post about animation types for 2d games and I hope that will be useful for you too.</p>
+<p><a href="http://blog.digitaltutors.com/how-animation-for-games-is-different-from-animation-for-movies/">http://blog.digitaltutors.com/how-animation-for-games-is-different-from-animation-for-movies/</a></p>
+<p><a href="http://blog.digitaltutors.com/bringing-hero-life-indie-game-development-pipeline/">http://blog.digitaltutors.com/bringing-hero-life-indie-game-development-pipeline/</a></p>
+<p><a href="http://www.gamasutra.com/view/feature/131796/creating_character_animation_assets.php">http://www.gamasutra.com/view/feature/131796/creating_character_animation_assets.php</a></p>
+<p><a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/IdleAnimation">http://tvtropes.org/pmwiki/pmwiki.php/Main/IdleAnimation</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Walk_cycle">https://en.wikipedia.org/wiki/Walk_cycle</a></p>
+<p><a href="http://www.cgmeetup.net/home/how-to-create-run-cycle-animation/">http://www.cgmeetup.net/home/how-to-create-run-cycle-animation/</a></p>
+<p><a href="https://courses.cs.washington.edu/courses/cse459/03wi/Projects/Adam/symJump/symJump.html">https://courses.cs.washington.edu/courses/cse459/03wi/Projects/Adam/symJump/symJump.html</a></p>
+</div>
+    </div>   
+    <!-- .entry END --> 
+     </div>
+	</div>
+	<!-- .post-content END--> 
+	<!-- .post END -->
+    
+    <div class="tags_container"><div class="tags_icon"></div><div class="single_post_tags"><a href="https://marionettestudio.com/tag/2d-animation-tool/" rel="tag">2d animation tool</a>, <a href="https://marionettestudio.com/tag/2d-animations-for-games/" rel="tag">2d animations for games</a>, <a href="https://marionettestudio.com/tag/2d-games/" rel="tag">2D games</a>, <a href="https://marionettestudio.com/tag/types-of-animation/" rel="tag">types of animation</a></div></div>
+    
+            
+	
+    <div class="share_icons_container"><div class="shareicons_icon"></div><div class="single_post_share_icon">   <div class="share-box">
+      <ul>
+        <li id="facebook"> <a  target="_blank" onClick="popup = window.open('http://www.facebook.com/sharer.php?u=https://marionettestudio.com/animation-types-for-2d-games/&amp;t=Animation types for 2d games', 'PopupPage', 'height=450,width=500,scrollbars=yes,resizable=yes'); return false" href="#"><i class="fa fa-facebook"></i></a>
+         </li>
+        <li id="twitter"> <a  target="_blank" onClick="popup = window.open('http://twitter.com/home?status=Animation types for 2d games https://marionettestudio.com/animation-types-for-2d-games/', 'PopupPage', 'height=450,width=500,scrollbars=yes,resizable=yes'); return false" href="#"><i class="fa fa-twitter"></i></a>
+         </li>
+        <li id="lin"> <a  target="_blank" onClick="popup = window.open('http://linkedin.com/shareArticle?mini=true&amp;url=https://marionettestudio.com/animation-types-for-2d-games/&amp;title=Animation types for 2d games', 'PopupPage', 'height=450,width=500,scrollbars=yes,resizable=yes'); return false" href="#"><i class="fa fa-linkedin"></i></a>
+         </li>
+        <li id="reddit"> <a  target="_blank" onClick="popup = window.open('http://reddit.com/submit?url=https://marionettestudio.com/animation-types-for-2d-games/&amp;title=Animation types for 2d games', 'PopupPage', 'height=450,width=500,scrollbars=yes,resizable=yes'); return false" href="#"><i class="fa fa-reddit"></i></a>
+         </li>
+        <li id="tumblr"> <a  target="_blank" onClick="popup = window.open('http://www.tumblr.com/share/link?url=https%3A%2F%2Fmarionettestudio.com%2Fanimation-types-for-2d-games%2F&amp;name=Animation types for 2d games&amp;description=Animations+for+2d+games+can+be+more+difficult+than+animations+for+movies+because+in+video+games+the+characters+must+interact+with+each+other.+In+games+every+action+is+controlled+by+the+user+and+the+characters+must+respond+to+the+action+of+the+player.+So%2C+animation+have+to+look+good+from+every+angle.+That%26%238217%3Bs+why+the%3Cbr%2F%3E%3Ca+href%3D%22https%3A%2F%2Fmarionettestudio.com%2Fanimation-types-for-2d-games%2F%22+class%3D%22more%22%3ERead+more%3C%2Fa%3E', 'PopupPage', 'height=450,width=500,scrollbars=yes,resizable=yes'); return false" href="#"><i class="fa fa-tumblr"></i></a>
+         </li>
+        <li id="gplus"> <a  target="_blank" onClick="popup = window.open('http://google.com/bookmarks/mark?op=edit&amp;bkmk=https://marionettestudio.com/animation-types-for-2d-games/&amp;title=Animation types for 2d games', 'PopupPage', 'height=450,width=500,scrollbars=yes,resizable=yes'); return false" href="#"><i class="fa fa-google-plus"></i></a>
+         </li>
+        <li id="member_email"> <a  target="_blank" onClick="popup = window.open('mailto:?subject=Animation types for 2d games&amp;body=https://marionettestudio.com/animation-types-for-2d-games/', 'PopupPage', 'height=450,width=500,scrollbars=yes,resizable=yes'); return false" href="#"><i class="fa fa-envelope-o"></i></a>
+         </li>
+      </ul>
+    </div>
+	
+	</div></div>
+    
+	
+
+
+<div id="author-bio">
+				<img src="https://secure.gravatar.com/avatar/493b7d3d67d0491af8b8290edfa712e6?s=103&#038;d=mm&#038;r=g" width="103" height="103" alt="" class="avatar avatar-103 wp-user-avatar wp-user-avatar-103 photo avatar-default" />								<div id="author-info">
+									<h3>Codrina</h3>
+									<p></p>
+								<a href="https://marionettestudio.com/author/codrina/" class="author_posts_link">More posts by Codrina </a>								</div>
+							</div>
+
+
+
+
+
+
+
+
+
+		<div class="single_post_related_carousel"><script type="text/javascript" charset="utf-8">
+		var j$ = jQuery;
+		j$.noConflict();
+		"use strict";
+	//setup up Carousel
+		j$(window).load(function() {
+		j$(".rp_sc ul").carouFredSel({
+					responsive: true,
+					width: "100%",
+					scroll: 1,
+					prev: ".related_left",
+					next: ".related_right",
+					auto: false,
+					items: {
+						width: 310,
+						height: "variable",
+						//	height: "30%",	//	optionally resize item-height
+						visible: {
+							min: 1,
+							max: 3
+						}
+					}
+				});
+				});
+	</script>
+	
+	<h2 class="single_related">Related Post</h2>
+	<div class="related_nav">
+  <p class="related_left"></p>
+  <p class="related_right"></p>
+</div>
+	<div class="rp_sc">
+<ul>      <!-- related post -->
+
+      <li class="blog_related_post brsc">
+      
+     <div class="post">
+
+<div class='post-attachement'><img width="600" height="490" src="https://marionettestudio.com/wp-content/uploads/2017/10/3-essential-tools-to-create-an-animation-in-3-minutes-600x490.jpeg" class="attachment-600x490 wp-post-image" alt="3 essential tools to create an animation in 3 minutes" /></div><div class='sep_25'></div>  <div class="post_ctn"> 
+    <!-- .title -->
+    <div class="post-title">
+      <h2><a href="https://marionettestudio.com/3-essentials-tools-to-create-a-successful-animation-in-3-minutes/" title="3 Essentials Tools to create a successful animation in 3 minutes">
+        3 Essentials Tools to create a successful animation in 3 minutes        </a></h2>
+    </div>
+     <!-- .title END--> 
+     <!-- post-info-top -->     
+    <div class="post-info">By <a href="https://marionettestudio.com/author/msadmin/" title="Posts by Raluca" rel="author">Raluca</a>    |    <a href="https://marionettestudio.com/3-essentials-tools-to-create-a-successful-animation-in-3-minutes/#comments" class="comments-link" >4 comments</a></div>
+     
+    <!-- post-info END-->     
+    <!-- .entry -->    
+    <div class="entry">
+      Whenever you are part of marketing, media, advertising, entertainment, gaming or any other industry that requires expressing a message, animated content has become essential in grabbing people's attention. Giving you an answer on how to<a href="https://marionettestudio.com/3-essentials-tools-to-create-a-successful-animation-in-3-minutes/" class="more-link">Read more</a><p></p>    </div>   
+    <!-- .entry END --> 
+     </div>
+	</div>
+	<!-- .post-content END--> 
+	<!-- .post END -->
+      </li>
+
+            <!-- related post -->
+
+      <li class="blog_related_post brsc">
+      
+     <div class="post">
+
+<div class='post-attachement'><img width="600" height="490" src="https://marionettestudio.com/wp-content/uploads/2018/02/skyppy-fox-running-and-falling-animated-video-600x490.png" class="attachment-600x490 wp-post-image" alt="skyppy-fox-running-and-falling-animated-video" /></div><div class='sep_25'></div>  <div class="post_ctn"> 
+    <!-- .title -->
+    <div class="post-title">
+      <h2><a href="https://marionettestudio.com/engage-audience-animated-videos/" title="Engage your audience with animated videos">
+        Engage your audience with animated videos        </a></h2>
+    </div>
+     <!-- .title END--> 
+     <!-- post-info-top -->     
+    <div class="post-info">By <a href="https://marionettestudio.com/author/sorin/" title="Posts by Sorin" rel="author">Sorin</a>    |    <a href="https://marionettestudio.com/engage-audience-animated-videos/#comments" class="comments-link" >1  comment</a></div>
+     
+    <!-- post-info END-->     
+    <!-- .entry -->    
+    <div class="entry">
+      The best way of expressing your message in the digital world is through animated videos. Animation gives you the freedom to target your audience in a compelling, powerful and exciting way! You can express your<a href="https://marionettestudio.com/engage-audience-animated-videos/" class="more-link">Read more</a><p></p>    </div>   
+    <!-- .entry END --> 
+     </div>
+	</div>
+	<!-- .post-content END--> 
+	<!-- .post END -->
+      </li>
+
+            <!-- related post -->
+
+      <li class="blog_related_post brsc">
+      
+     <div class="post">
+
+<div class='post-attachement'><img width="600" height="490" src="https://marionettestudio.com/wp-content/uploads/2017/10/The-Marionettes-2D-characters-Marionette-Studio-600x490.png" class="attachment-600x490 wp-post-image" alt="The Marionettes - 2D characters - Marionette Studio" /></div><div class='sep_25'></div>  <div class="post_ctn"> 
+    <!-- .title -->
+    <div class="post-title">
+      <h2><a href="https://marionettestudio.com/meet-the-marionettes/" title="Meet The Marionettes !">
+        Meet The Marionettes !        </a></h2>
+    </div>
+     <!-- .title END--> 
+     <!-- post-info-top -->     
+    <div class="post-info">By <a href="https://marionettestudio.com/author/msadmin/" title="Posts by Raluca" rel="author">Raluca</a>    |    <a href="https://marionettestudio.com/meet-the-marionettes/#respond" class="comments-link" >0 comment</a></div>
+     
+    <!-- post-info END-->     
+    <!-- .entry -->    
+    <div class="entry">
+      <p>&nbsp; We would proudly  like to introduce our newest characters, The Marionettes family. Having the touch of the retro style, our animated family will kick off the animation templates that will be introduced very soon in<a href="https://marionettestudio.com/meet-the-marionettes/" class="more-link">Read more</a></p>
+<p></p>    </div>   
+    <!-- .entry END --> 
+     </div>
+	</div>
+	<!-- .post-content END--> 
+	<!-- .post END -->
+      </li>
+
+            <!-- related post -->
+
+      <li class="blog_related_post brsc">
+      
+     <div class="post">
+
+<div class='post-attachement'><img width="600" height="490" src="https://marionettestudio.com/wp-content/uploads/2017/11/pixel-art-effects-marionette-studio-600x490.png" class="attachment-600x490 wp-post-image" alt="Pixel art effect in Marionette Studio" /></div><div class='sep_25'></div>  <div class="post_ctn"> 
+    <!-- .title -->
+    <div class="post-title">
+      <h2><a href="https://marionettestudio.com/how-to-easily-make-a-pixel-art-animation/" title="How to easily make a Pixel Art animation">
+        How to easily make a Pixel Art animation        </a></h2>
+    </div>
+     <!-- .title END--> 
+     <!-- post-info-top -->     
+    <div class="post-info">By <a href="https://marionettestudio.com/author/msadmin/" title="Posts by Raluca" rel="author">Raluca</a>    |    <a href="https://marionettestudio.com/how-to-easily-make-a-pixel-art-animation/#respond" class="comments-link" >0 comment</a></div>
+     
+    <!-- post-info END-->     
+    <!-- .entry -->    
+    <div class="entry">
+      Pixel art is a form of digital art, created with the help of software tools, where images are created on the pixel level. Most of graphics for computers (8-bit and 16-bit), video game consoles and graphing<a href="https://marionettestudio.com/how-to-easily-make-a-pixel-art-animation/" class="more-link">Read more</a><p></p>    </div>   
+    <!-- .entry END --> 
+     </div>
+	</div>
+	<!-- .post-content END--> 
+	<!-- .post END -->
+      </li>
+
+            <!-- related post -->
+
+      <li class="blog_related_post brsc">
+      
+     <div class="post">
+
+<div class='post-attachement'><img width="600" height="490" src="https://marionettestudio.com/wp-content/uploads/2017/11/2-walk-cycle-animation-tutorial-pass-pose-by-marionette-studio.png-min-600x490.png" class="attachment-600x490 wp-post-image" alt="walk cycle animation tutorial - pass pose" /></div><div class='sep_25'></div>  <div class="post_ctn"> 
+    <!-- .title -->
+    <div class="post-title">
+      <h2><a href="https://marionettestudio.com/how-to-animate-a-walk-cycle/" title="How to animate a Walk Cycle">
+        How to animate a Walk Cycle        </a></h2>
+    </div>
+     <!-- .title END--> 
+     <!-- post-info-top -->     
+    <div class="post-info">By <a href="https://marionettestudio.com/author/sorin/" title="Posts by Sorin" rel="author">Sorin</a>    |    <a href="https://marionettestudio.com/how-to-animate-a-walk-cycle/#respond" class="comments-link" >0 comment</a></div>
+     
+    <!-- post-info END-->     
+    <!-- .entry -->    
+    <div class="entry">
+       Regardless of whether you are a non-experienced, a beginner or an professional animator, a walk cycle is something that every person needs to know. This type of motion is so natural as we, as humans, unconscious experience it<a href="https://marionettestudio.com/how-to-animate-a-walk-cycle/" class="more-link">Read more</a><p></p>    </div>   
+    <!-- .entry END --> 
+     </div>
+	</div>
+	<!-- .post-content END--> 
+	<!-- .post END -->
+      </li>
+
+            <!-- related post -->
+
+      <li class="blog_related_post brsc">
+      
+     <div class="post">
+
+<div class='post-attachement'><img width="600" height="490" src="https://marionettestudio.com/wp-content/uploads/2016/10/d6508028413367.55bf5e5161a11-600x490.png" class="attachment-600x490 wp-post-image" alt="learning 2D games animation" /></div><div class='sep_25'></div>  <div class="post_ctn"> 
+    <!-- .title -->
+    <div class="post-title">
+      <h2><a href="https://marionettestudio.com/how-should-i-start-learning-2d-game-animations/" title="How should I start learning 2D game animations">
+        How should I start learning 2D game animations        </a></h2>
+    </div>
+     <!-- .title END--> 
+     <!-- post-info-top -->     
+    <div class="post-info">By <a href="https://marionettestudio.com/author/codrina/" title="Posts by Codrina" rel="author">Codrina</a>    |    <a href="https://marionettestudio.com/how-should-i-start-learning-2d-game-animations/#comments" class="comments-link" >1  comment</a></div>
+     
+    <!-- post-info END-->     
+    <!-- .entry -->    
+    <div class="entry">
+      <p>Learning 2D game animations can be hard and can take substantial amount of effort for someone with no specialized school. In this post we will try to figure out how should we start learning, what<a href="https://marionettestudio.com/how-should-i-start-learning-2d-game-animations/" class="more-link">Read more</a></p>
+<p></p>    </div>   
+    <!-- .entry END --> 
+     </div>
+	</div>
+	<!-- .post-content END--> 
+	<!-- .post END -->
+      </li>
+
+            <!-- related post -->
+
+      <li class="blog_related_post brsc">
+      
+     <div class="post">
+
+<div class='post-attachement'><img width="600" height="490" src="https://marionettestudio.com/wp-content/uploads/2016/01/skeleton_view-600x490.jpg" class="attachment-600x490 wp-post-image" alt="skeleton view" /></div><div class='sep_25'></div>  <div class="post_ctn"> 
+    <!-- .title -->
+    <div class="post-title">
+      <h2><a href="https://marionettestudio.com/animating-with-marionette-studio/" title="Animating with Marionette Studio">
+        Animating with Marionette Studio        </a></h2>
+    </div>
+     <!-- .title END--> 
+     <!-- post-info-top -->     
+    <div class="post-info">By <a href="https://marionettestudio.com/author/msadmin/" title="Posts by Raluca" rel="author">Raluca</a>    |    <a href="https://marionettestudio.com/animating-with-marionette-studio/#comments" class="comments-link" >20 comments</a></div>
+     
+    <!-- post-info END-->     
+    <!-- .entry -->    
+    <div class="entry">
+      <p>In this tutorial we will focus on the animating part and you will learn how to bring your rigged character to life with Marionette Studio. Firstly, we will take a look at animation timeline to<a href="https://marionettestudio.com/animating-with-marionette-studio/" class="more-link">Read more</a></p>
+<p></p>    </div>   
+    <!-- .entry END --> 
+     </div>
+	</div>
+	<!-- .post-content END--> 
+	<!-- .post END -->
+      </li>
+
+      
+      
+    </ul>
+
+  </div>
+</div>
+
+<!-- You can start editing here. -->
+
+<div class="clearfix sep_70"></div>
+<div class="comment_count">
+  <h3>
+    <a href="https://marionettestudio.com/animation-types-for-2d-games/#comments" class="comments-link" >2 comments</a>  </h3>
+</div>
+<div id="comments">
+  <ul>
+    	<li class="comment even thread-even depth-1" id="li-comment-229">
+
+  <div id="comment-229" class="comment_ctn">
+
+    <div class="avatar"> <img src="https://secure.gravatar.com/avatar/73b3635cf904a892e68d1882d8c02d03?s=76&#038;d=mm&#038;r=g" width="76" height="76" alt="" class="avatar avatar-76wp-user-avatar wp-user-avatar-76 alignnone photo avatar-default" /></div>
+
+    
+    <div class="details"> <span class="author"><a href='http://www.gameyan.com/' rel='external nofollow' class='url'>GameYan Studio</a></span><span class="Reply">
+
+      <a rel='nofollow' class='comment-reply-link' href='https://marionettestudio.com/animation-types-for-2d-games/?replytocom=229#respond' onclick='return addComment.moveForm( "comment-229", "229", "respond", "9668" )' aria-label='Reply to GameYan Studio'>Reply</a>
+      
+      </span>
+      <span class="date"><a href="https://marionettestudio.com/animation-types-for-2d-games/#comment-229">January 1, 2017 at 10:47 am</a></span>
+		       <div class="comment">
+
+        <p>Great article to read. thanks for sharing.</p>
+
+      </div>
+      
+      
+    </div>
+    		 
+
+  </div>
+
+  </li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-296">
+
+  <div id="comment-296" class="comment_ctn">
+
+    <div class="avatar"> <img src="https://secure.gravatar.com/avatar/dd236066b2792aec2481001b0edad7c0?s=76&#038;d=mm&#038;r=g" width="76" height="76" alt="" class="avatar avatar-76wp-user-avatar wp-user-avatar-76 alignnone photo avatar-default" /></div>
+
+    
+    <div class="details"> <span class="author"><a href='http://www.xdsindia.com/post2.html' rel='external nofollow' class='url'>Harshvardhan Singh</a></span><span class="Reply">
+
+      <a rel='nofollow' class='comment-reply-link' href='https://marionettestudio.com/animation-types-for-2d-games/?replytocom=296#respond' onclick='return addComment.moveForm( "comment-296", "296", "respond", "9668" )' aria-label='Reply to Harshvardhan Singh'>Reply</a>
+      
+      </span>
+      <span class="date"><a href="https://marionettestudio.com/animation-types-for-2d-games/#comment-296">May 6, 2017 at 7:18 am</a></span>
+		       <div class="comment">
+
+        <p>loved the article</p>
+
+      </div>
+      
+      
+    </div>
+    		 
+
+  </div>
+
+  </li><!-- #comment-## -->
+  </ul>
+  <div class="clear"></div>
+</div>
+<div>
+<div>
+        <div class="clearfix"></div>
+    <div id="add-comment">
+    <h4>Leave a Comment</h4>
+      						<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title"> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/animation-types-for-2d-games/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="https://marionettestudio.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>							<p><input id="author" class="single_post_author" name="author" type="text" value=""  placeholder="Name*" aria-required='true' /></p>
+<p><input id="email" class="single_post_email" name="email" type="text" value="" placeholder="Email*" aria-required='true' /></p>
+<p><input id="url" class="single_post_url" name="url" type="text" value="" placeholder="Website" /></p>
+ 
+<p class="cptch_block"><br /><span class="cptch_wrap">
+				<label class="cptch_label" for="cptch_input">
+					<span class="cptch_span"><input id="cptch_input" class="cptch_input" type="text" autocomplete="off" name="cptch_number" value="" maxlength="2" size="2" aria-required="true" required="required" style="margin-bottom:0;display:inline;font-size: 12px;width: 40px;" /></span>
+					<span class="cptch_span">&nbsp;&#43;&nbsp;</span>
+					<span class="cptch_span">8</span>
+					<span class="cptch_span">&nbsp;=&nbsp;</span>
+					<span class="cptch_span">10</span>
+					<input type="hidden" name="cptch_result" value="vss=" />
+					<input type="hidden" name="cptch_time" value="1525850136" />
+					<input type="hidden" value="Version: 4.1.9" />
+				</label><span class="cptch_reload_button_wrap hide-if-no-js">
+					<noscript>
+						<style type="text/css">
+							.hide-if-no-js {
+								display: none !important;
+							}
+						</style>
+					</noscript>
+					<span class="cptch_reload_button dashicons dashicons-update"></span>
+				</span></span></p>												<p><textarea id="comment" name="comment" class="single_post_comment" placeholder="Message*"  aria-required="true"></textarea></p>						
+						<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='9668' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>					</form>
+							</div><!-- #respond -->
+			          </div>
+  </div>
+</div>
+ 
+  </div>
+  
+  <!-- #posts END -->
+  
+          <div id="sidebar" class=" right_sb">
+      <div id="rd_s_blog_widget-2" class="sb_widget  rd_s_blog_widget"> 
+	    <h3>Related Posts</h3>          
+                <ul class="rd_widget_recent_entries">
+  					                                        <li>                        
+                    					<div class="thumbnail">
+					<a title="" href="https://marionettestudio.com/engage-audience-animated-videos/"><img width="200" height="160" src="https://marionettestudio.com/wp-content/uploads/2018/02/skyppy-fox-running-and-falling-animated-video-200x160.png" class="attachment-200x160 wp-post-image" alt="skyppy-fox-running-and-falling-animated-video" /></a>
+					</div>
+
+										<div class="widget_recent_entry">
+                    <div class="w_date">26 February, 2018</div><div class="w_comment"><a href="https://marionettestudio.com/engage-audience-animated-videos/#comments" class="comments-link" >1</a></div>	             			
+					<h4>
+					<a href="https://marionettestudio.com/engage-audience-animated-videos/" rel="bookmark" title=""> 
+					Engage your audience with animated videos					</a>
+					</h4>
+                    </div>
+	                </li>
+                                        <li>                        
+                    					<div class="thumbnail">
+					<a title="" href="https://marionettestudio.com/animate-easier-using-onion-skinning/"><img width="200" height="160" src="https://marionettestudio.com/wp-content/uploads/2018/01/onion-skinning-Marionette-Studio-animation-software-200x160.png" class="attachment-200x160 wp-post-image" alt="onion skinning Marionette Studio animation software" /></a>
+					</div>
+
+										<div class="widget_recent_entry">
+                    <div class="w_date">24 January, 2018</div><div class="w_comment"><a href="https://marionettestudio.com/animate-easier-using-onion-skinning/#respond" class="comments-link" >0</a></div>	             			
+					<h4>
+					<a href="https://marionettestudio.com/animate-easier-using-onion-skinning/" rel="bookmark" title=""> 
+					Animate easier using Onion Skinning					</a>
+					</h4>
+                    </div>
+	                </li>
+                                        <li>                        
+                    					<div class="thumbnail">
+					<a title="" href="https://marionettestudio.com/how-animation-and-graphics-are-changing-the-entire-marketing-world-2/"><img width="200" height="160" src="https://marionettestudio.com/wp-content/uploads/2018/01/How-Animation-and-Graphics-are-changing-the-marketing-world-200x160.jpg" class="attachment-200x160 wp-post-image" alt="How Animation and Graphics are changing the marketing world" /></a>
+					</div>
+
+										<div class="widget_recent_entry">
+                    <div class="w_date">22 January, 2018</div><div class="w_comment"><a href="https://marionettestudio.com/how-animation-and-graphics-are-changing-the-entire-marketing-world-2/#respond" class="comments-link" >0</a></div>	             			
+					<h4>
+					<a href="https://marionettestudio.com/how-animation-and-graphics-are-changing-the-entire-marketing-world-2/" rel="bookmark" title=""> 
+					How Animation and Graphics are changing the entire marketing world?					</a>
+					</h4>
+                    </div>
+	                </li>
+                                        <li>                        
+                    					<div class="thumbnail">
+					<a title="" href="https://marionettestudio.com/free-rigs-christmas-art-commercial-use/"><img width="200" height="160" src="https://marionettestudio.com/wp-content/uploads/2017/12/Background-Exterior-Santa-House-Winter-Globe-House-for-animation-200x160.png" class="attachment-200x160 wp-post-image" alt="Background Exterior Santa House Winter Globe House for animation" /></a>
+					</div>
+
+										<div class="widget_recent_entry">
+                    <div class="w_date">18 December, 2017</div><div class="w_comment"><a href="https://marionettestudio.com/free-rigs-christmas-art-commercial-use/#comments" class="comments-link" >2</a></div>	             			
+					<h4>
+					<a href="https://marionettestudio.com/free-rigs-christmas-art-commercial-use/" rel="bookmark" title=""> 
+					Free Rigs &#038; Christmas Art for commercial use					</a>
+					</h4>
+                    </div>
+	                </li>
+                                                        </ul>
+		</div><div id="tag_cloud-2" class="sb_widget  widget_tag_cloud"><h3>Categories</h3><div class="tagcloud"><a href='https://marionettestudio.com/category/2d-animation/' class='tag-link-185' title='9 topics' style='font-size: 16.672566371681pt;'>2D Animation</a>
+<a href='https://marionettestudio.com/category/2d-animation-for-games/' class='tag-link-111' title='13 topics' style='font-size: 18.530973451327pt;'>2D animation for games</a>
+<a href='https://marionettestudio.com/category/2016-trends/' class='tag-link-150' title='4 topics' style='font-size: 12.955752212389pt;'>2016 Trends</a>
+<a href='https://marionettestudio.com/category/advertising/' class='tag-link-219' title='2 topics' style='font-size: 10.230088495575pt;'>Advertising</a>
+<a href='https://marionettestudio.com/category/agile-game-development/' class='tag-link-134' title='1 topic' style='font-size: 8pt;'>Agile Game Development</a>
+<a href='https://marionettestudio.com/category/algorithms/' class='tag-link-128' title='2 topics' style='font-size: 10.230088495575pt;'>Algorithms</a>
+<a href='https://marionettestudio.com/category/animation/' class='tag-link-110' title='26 topics' style='font-size: 22pt;'>Animation</a>
+<a href='https://marionettestudio.com/category/animation-for-dummies/' class='tag-link-133' title='11 topics' style='font-size: 17.663716814159pt;'>Animation for Dummies</a>
+<a href='https://marionettestudio.com/category/animation-techniques/' class='tag-link-178' title='6 topics' style='font-size: 14.814159292035pt;'>Animation techniques</a>
+<a href='https://marionettestudio.com/category/animation-tips/' class='tag-link-161' title='15 topics' style='font-size: 19.150442477876pt;'>Animation tips</a>
+<a href='https://marionettestudio.com/category/animation-tools-for-marketers/' class='tag-link-220' title='2 topics' style='font-size: 10.230088495575pt;'>Animation Tools for Marketers</a>
+<a href='https://marionettestudio.com/category/characters/' class='tag-link-194' title='5 topics' style='font-size: 13.946902654867pt;'>Characters</a>
+<a href='https://marionettestudio.com/category/create-character/' class='tag-link-108' title='7 topics' style='font-size: 15.433628318584pt;'>Create character</a>
+<a href='https://marionettestudio.com/category/creative-work/' class='tag-link-195' title='3 topics' style='font-size: 11.716814159292pt;'>Creative work</a>
+<a href='https://marionettestudio.com/category/design/' class='tag-link-197' title='2 topics' style='font-size: 10.230088495575pt;'>Design</a>
+<a href='https://marionettestudio.com/category/digital-art/' class='tag-link-198' title='4 topics' style='font-size: 12.955752212389pt;'>Digital Art</a>
+<a href='https://marionettestudio.com/category/digital-design/' class='tag-link-176' title='5 topics' style='font-size: 13.946902654867pt;'>Digital Design</a>
+<a href='https://marionettestudio.com/category/features/' class='tag-link-208' title='3 topics' style='font-size: 11.716814159292pt;'>Features</a>
+<a href='https://marionettestudio.com/category/finding-fun-in-games/' class='tag-link-142' title='1 topic' style='font-size: 8pt;'>Finding FUN in games</a>
+<a href='https://marionettestudio.com/category/freebies/' class='tag-link-213' title='1 topic' style='font-size: 8pt;'>Freebies</a>
+<a href='https://marionettestudio.com/category/game-development-team/' class='tag-link-136' title='1 topic' style='font-size: 8pt;'>Game Development Team</a>
+<a href='https://marionettestudio.com/category/game-planning/' class='tag-link-140' title='1 topic' style='font-size: 8pt;'>Game Planning</a>
+<a href='https://marionettestudio.com/category/game-release-planning/' class='tag-link-141' title='1 topic' style='font-size: 8pt;'>Game Release Planning</a>
+<a href='https://marionettestudio.com/category/how-to/' class='tag-link-204' title='4 topics' style='font-size: 12.955752212389pt;'>How To</a>
+<a href='https://marionettestudio.com/category/indie-games/' class='tag-link-139' title='2 topics' style='font-size: 10.230088495575pt;'>Indie Games</a>
+<a href='https://marionettestudio.com/category/inktober/' class='tag-link-193' title='1 topic' style='font-size: 8pt;'>Inktober</a>
+<a href='https://marionettestudio.com/category/marionette-studio/' class='tag-link-104' title='6 topics' style='font-size: 14.814159292035pt;'>Marionette Studio</a>
+<a href='https://marionettestudio.com/category/marionette-studio-updates/' class='tag-link-232' title='1 topic' style='font-size: 8pt;'>Marionette Studio Updates</a>
+<a href='https://marionettestudio.com/category/marketing/' class='tag-link-218' title='2 topics' style='font-size: 10.230088495575pt;'>Marketing</a>
+<a href='https://marionettestudio.com/category/project-management-for-games/' class='tag-link-135' title='1 topic' style='font-size: 8pt;'>Project Management for Games</a>
+<a href='https://marionettestudio.com/category/rigging/' class='tag-link-109' title='9 topics' style='font-size: 16.672566371681pt;'>Rigging</a>
+<a href='https://marionettestudio.com/category/skeletal-animation/' class='tag-link-126' title='8 topics' style='font-size: 16.053097345133pt;'>Skeletal animation</a>
+<a href='https://marionettestudio.com/category/sketches/' class='tag-link-196' title='1 topic' style='font-size: 8pt;'>Sketches</a>
+<a href='https://marionettestudio.com/category/the-marionettes/' class='tag-link-182' title='2 topics' style='font-size: 10.230088495575pt;'>The Marionettes</a>
+<a href='https://marionettestudio.com/category/theoretical-concepts-and-observables/' class='tag-link-129' title='7 topics' style='font-size: 15.433628318584pt;'>Theoretical Concepts and Observables</a>
+<a href='https://marionettestudio.com/category/tutorial/' class='tag-link-107' title='9 topics' style='font-size: 16.672566371681pt;'>Tutorial</a>
+<a href='https://marionettestudio.com/category/uncategorized/' class='tag-link-1' title='1 topic' style='font-size: 8pt;'>Uncategorized</a></div>
+</div><div id="recent-comments-3" class="sb_widget  widget_recent_comments"><h3>Latest activity</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Ravali Reddy</span> on <a href="https://marionettestudio.com/engage-audience-animated-videos/#comment-1914">Engage your audience with animated videos</a></li><li class="recentcomments"><span class="comment-author-link">Ravali Reddy</span> on <a href="https://marionettestudio.com/3-essentials-tools-to-create-a-successful-animation-in-3-minutes/#comment-1913">3 Essentials Tools to create a successful animation in 3 minutes</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://indizine.com/offerings/multimedia-design-and-development.html' rel='external nofollow' class='url'>Vijay</a></span> on <a href="https://marionettestudio.com/top-5-animation-blogs-to-learn-from/#comment-1843">Top 5 blogs to learn animation from</a></li><li class="recentcomments"><span class="comment-author-link">Ali</span> on <a href="https://marionettestudio.com/easing-functions-in-the-animation-process/#comment-1813">Easing functions in the animation process</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://www.admecindia.co.in/animation-courses.html' rel='external nofollow' class='url'>Kavita Singh</a></span> on <a href="https://marionettestudio.com/essential-animator-skills-required-to-become-an-animator/#comment-1678">Essential skills required for an animator</a></li></ul></div><div id="rd_social_widget-4" class="sb_widget  rd_social_widget"></h3><div class='thefox_social_widget'><div class='thefox_social_widget_icons clearfix'>            <div id="facebook"> <a href="https://www.facebook.com/marionettestudio" target="_blank" ><i class="fa fa-facebook"></i></a></div>
+                              <div id="twitter"> <a href="https://twitter.com/marionettestdio" target="_blank"><i class="fa fa-twitter"></i></a></div>
+                                                                                    <div id="yt"> <a href="https://www.youtube.com/channel/UClYV1rzwKQ2ZkwDQyj4luQg" target="_blank"><i class="fa fa-youtube"></i></a></div>
+                                          <div id="tumblr"> <a href="http://marionettestudio.tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a></div>
+                                          <div id="reddit"> <a href="https://www.reddit.com/user/marionettestudio/" target="_blank" ><i class="fa fa-reddit"></i></a></div>
+                                                                  </div></div></div>    </div>
+    <div class="clearfix"></div>
+    </div>
+
+<!-- #page_content END -->
+
+</div>
+
+<div id="footer_bg"  class="footer_4_col footer_type_2">
+  <div class="wrapper">
+    <div id="footer">
+	  <div class="widget_wrap">
+      <div class="widget widget_text"><h2>MARIONETTE STUDIO</h2><div class="sc_small_line widget_line"><span class="small_l_left"></span></div>			<div class="textwidget"><p><span  style="font-weight:300;color:#767b7f!important;font-size:13px;"><b style="font-weight:500;font-size:14px;color:#ffffff!important;">+1 (415) 513-0104</b> </br> 3739 Balboa St # 1221 </br> San Francisco, California, USA</br>94121</span></p>
+</div>
+		</div>            </div>
+            <div class="widget_wrap">
+      <div class="widget widget_text"><h2>2D ANIMATION</h2><div class="sc_small_line widget_line"><span class="small_l_left"></span></div>			<div class="textwidget"><p><a href="http://marionettestudio.com/features/">Features</a><br />
+<a href="http://marionettestudio.com/pricing/">Pricing</a><br />
+<a href="http://marionettestudio.com/demo/">Request a Demo</a><br />
+<a href="http://marionettestudio.com/contact/">Contact Us</a><br />
+<a href="http://marionettestudio.com/software-change-log/ ">Software Change Log</a><br />
+<a href="https://marionettestudio.com/education-partner-program-application/">Education Partner Program</a></p>
+</div>
+		</div>            </div>
+            <div class="widget_wrap">
+      <div class="widget widget_text"><h2>LEARNING &#038; DOCS</h2><div class="sc_small_line widget_line"><span class="small_l_left"></span></div>			<div class="textwidget"><p><a href="http://marionettestudio.com/2d-animations/">Showcase</a><br />
+<a href="http://marionettestudio.com/learn-2d-animation/animation-tutorials/">Tutorials</a><br />
+<a href="http://marionettestudio.com/learn-2d-animation/user-guide/">User guide</a><br />
+<a href="http://marionettestudio.com/blog/">Blog</a><br />
+<a href="http://marionettestudio.com/videos/">Videos</a></p>
+</div>
+		</div>            </div>
+            <div class="widget_wrap">
+      <div class="widget rd_social_widget"><h2>FOLLOW US</h2><div class="sc_small_line widget_line"><span class="small_l_left"></span></div><div class='thefox_social_widget'><div class='thefox_social_widget_icons clearfix'>            <div id="facebook"> <a href="https://www.facebook.com/marionettestudio" target="_blank" ><i class="fa fa-facebook"></i></a></div>
+                              <div id="twitter"> <a href="https://twitter.com/marionettestdio" target="_blank"><i class="fa fa-twitter"></i></a></div>
+                                                                                    <div id="yt"> <a href="https://www.youtube.com/channel/UClYV1rzwKQ2ZkwDQyj4luQg" target="_blank"><i class="fa fa-youtube"></i></a></div>
+                                          <div id="tumblr"> <a href="http://marionettestudio.tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a></div>
+                                          <div id="reddit"> <a href="https://www.reddit.com/user/marionettestudio/" target="_blank" ><i class="fa fa-reddit"></i></a></div>
+                                                                  </div></div></div><div class="widget widget_mc4wp_form_widget"><script type="text/javascript">!function(){window.mc4wp||(window.mc4wp={listeners:[],forms:{on:function(n,w){window.mc4wp.listeners.push({event:n,callback:w})}}})}();</script><!-- MailChimp for WordPress v3.1 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-8092" method="post" data-id="8092" data-name="MTT Newsletter SignUp" ><div class="mc4wp-form-fields"><style>
+.centerNewsletterForm{
+    width: 100%;
+    min-width: 100px;  
+}
+.centerNewsletterInput{      
+    background-color: transparent!important;
+    border-color: #505865!important;
+  	color: #ffffff!important;
+    font-family: "Roboto Condensed";
+    font-size:24px;
+    margin: 5px 0 0 0!important;
+    min-width: 50px;
+    max-width: 100%!important;
+    width: 100%!important;    
+}
+  
+.centerNewsletterText{      
+    color: #767b7f!important;  
+  	font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+    text-align: left!important;
+}
+.centerNewsletterButton{
+    background-color: transparent!important;
+    border: 2px solid #2f90cc!important;
+    color: #2f90cc!important;
+    padding: 8px 28px 8px 28px!important;
+    margin: 4px 0 0 0!important;
+    font-family: "Roboto"!important;
+    font-size: 15px!important;  
+    font-weight: 400!important;
+    
+    -moz-border-radius: 6px!important;
+    -webkit-border-radius: 6px!important;
+    border-radius: 6px!important;  
+}
+.centerNewsletterButton:hover {     
+    background-color: transparent!important;
+    border-color: #ffffff!important;
+    color: #ffffff!important;
+}
+</style>
+<div class="centerNewsletterForm">
+  <span class="centerNewsletterText">Get the latest news & updates!</span>
+  <input class="centerNewsletterInput" type="email" name="EMAIL" placeholder="" required />
+  <input class="centerNewsletterButton" type="submit" value="SIGN UP"/>
+  </div>
+
+
+
+
+
+
+
+<div style="display: none;"><input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></div><input type="hidden" name="_mc4wp_timestamp" value="1525850137" /><input type="hidden" name="_mc4wp_form_id" value="8092" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin --></div>            </div>
+          </div>
+    </div>
+
+    <div id="footer_coms">
+      <div class="wrapper">
+
+ <div class="footer_message f_message_left" >
+   
+ © 2017 Marionette Studio  <a href="http://marionettestudio.com/terms-and-conditions/">Terms and Conditions</a> | <a href="http://marionettestudio.com/privacy-policy/">Privacy Policy</a> | <a href="http://marionettestudio.com/cookie-information/">Cookies Policy</a>  </div>
+
+
+</div>
+</div>
+</div>
+</div>
+<a id="to_top"><i class="fa-angle-up"></i></a>
+</div>
+<div id="mobile-menu">
+
+    <ul id="tf_mb_menu" class="menu"><li id="menu-item-10489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10489"><a href="https://marionettestudio.com/features/">Features</a></li>
+<li id="menu-item-10439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10439"><a href="https://marionettestudio.com/pricing/">Pricing</a></li>
+<li id="menu-item-7603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7603"><a href="https://marionettestudio.com/learn-2d-animation/">Learn</a>
+<ul class="sub-menu">
+	<li id="menu-item-7619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7619"><a href="https://marionettestudio.com/learn-2d-animation/animation-tutorials/">Video tutorials</a></li>
+	<li id="menu-item-7616" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7616"><a href="https://marionettestudio.com/learn-2d-animation/user-guide/">User guide</a></li>
+	<li id="menu-item-8444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8444"><a href="https://marionettestudio.com/videos/">Videos</a></li>
+	<li id="menu-item-8443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8443"><a href="https://marionettestudio.com/2d-animations/">2D Animations</a></li>
+</ul>
+</li>
+<li id="menu-item-7722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7722"><a href="https://marionettestudio.com/blog/">Blog</a></li>
+<li id="menu-item-10636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10636"><a href="https://marionettestudio.com/demo/">Demo</a></li>
+<li id="menu-item-8383" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8383"><a href="http://editor.marionettestudio.com/login">Login</a></li>
+<li id="menu-item-8078" class="create_animation_main_menu menu-item menu-item-type-custom menu-item-object-custom menu-item-8078"><a href="https://editor.marionettestudio.com/signup">START ANIMATING</a></li>
+</ul></div>
+<div class="menu_slide mt_menu sticky_header" >
+            <div class="wrapper tf_o_visible">
+
+<div id="logo_img"><a href="https://marionettestudio.com"><img class="dark_logo mobile_logo" src="https://marionettestudio.com/wp-content/uploads/2016/01/logotype_final_outline_white_sub_text.png" alt="Marionette Studio" title="Marionette Studio"/></a></div>
+
+
+
+
+                
+<div id="nav_button_alt"></div>
+    </div>          
+           
+</div>
+<div style="display:none"><div id="sg-popup-content-wrapper-20"><iframe width="960" height="530" src=" " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></div><div id="cookie-law-info-bar"><span>By using this site, you agree to Marionette Studio's use of cookies to improve your experience. Learn more on our Cookie Information page.    <a href="#" id="cookie_action_close_header"  class="small cli-plugin-button cli-plugin-main-button" >Accept</a> <a href="http://marionettestudio.com/cookie-information/" id="CONSTANT_OPEN_URL" target="_blank"  class="cli-plugin-main-link"  >Read More</a></span></div>		
+		<script type="text/javascript">
+			//<![CDATA[
+			jQuery(document).ready(function() {
+				cli_show_cookiebar({
+					settings: '{"animate_speed_hide":"500","animate_speed_show":"500","background":"#020f2a","border":"#000","border_on":false,"button_1_button_colour":"#020f2a","button_1_button_hover":"#020c22","button_1_link_colour":"#b7b7b7","button_1_as_button":true,"button_2_button_colour":"#020f2a","button_2_button_hover":"#020c22","button_2_link_colour":"#898989","button_2_as_button":false,"font_family":"inherit","header_fix":true,"notify_animate_hide":true,"notify_animate_show":true,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":true,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"","text":"#7a7a7a","show_once_yn":false,"show_once":"8000"}'
+				});
+			});
+			//]]>
+		</script>
+		
+		<script>
+function notify() {
+  ga('send', 'event', 'ButtonClicks', 'CreateAnimationButton', 'CreateAnimationButtonInHeader', 0);
+}
+document.getElementsByClassName("menu-item-8078")[0].addEventListener("click", notify);
+</script>
+
+<!--live chat -->
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=67096633"></script><script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://www.mylivechat.com/chatinline.aspx?hccid=67096633"></script><link rel='stylesheet' id='sg_animate-css'  href='https://marionettestudio.com/wp-content/plugins/popup-builder/style/animate.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sg_colorbox_theme-css'  href='https://marionettestudio.com/wp-content/plugins/popup-builder/style/sgcolorbox/sgthemes.css?ver=2.673' type='text/css' media='all' />
+<link rel='stylesheet' id='vc_google_fonts_roboto100100italic300300italicregularitalic500500italic700700italic900900italic-css'  href='//fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&#038;ver=4.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/wpdialog.min.js?ver=4.3.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var zilla_likes = {"ajaxurl":"https:\/\/marionettestudio.com\/wp-admin\/admin-ajax.php"};
+var zilla_likes = {"ajaxurl":"https:\/\/marionettestudio.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/themes/TheFox/js/customjs.js?ver=4.3.1'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/themes/TheFox/js/custom_woo_js.js?ver=4.3.1'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/themes/TheFox/js/smoothscroll.js?ver=4.3.1'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"https:\/\/marionettestudio.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sticky_anything_engage = {"element":".sticky_side_menu","topspace":"56","minscreenwidth":"768","maxscreenwidth":"999999","zindex":"1","legacymode":"","dynamicmode":"","debugmode":"","pushup":".sticky_bottom_limit","adminbar":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/sticky-menu-or-anything-on-scroll/assets/js/stickThis.js?ver=2.0.1'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-includes/js/comment-reply.min.js?ver=4.3.1'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/popup-builder/javascript/sg_resize.js?ver=2.673'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var SGPBParams = {"ajaxUrl":"https:\/\/marionettestudio.com\/wp-admin\/admin-ajax.php","ajaxNonce":"10615394ed"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/popup-builder/javascript/sg_popup_frontend.js?ver=2.673'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/popup-builder/javascript/sg_popup_init.js?ver=2.673'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/popup-builder/javascript/jquery.sgcolorbox-min.js?ver=2.673'></script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/js_composer/assets/js/js_composer_front.js?ver=4.8.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mc4wp_forms_config = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://marionettestudio.com/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min.js?ver=3.1'></script>
+<script type="text/javascript">(function() {function addEventListener(element,event,handler) {
+	if(element.addEventListener) {
+		element.addEventListener(event,handler, false);
+	} else if(element.attachEvent){
+		element.attachEvent('on'+event,handler);
+	}
+}})();</script>
+</body></html>

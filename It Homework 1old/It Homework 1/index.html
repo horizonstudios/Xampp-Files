@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<div class="logo">
+	<a href="index.html"><img id="logo" src="images/logo.png">
+	</div>
+	<title>Craftyhorizon</title>
+	<link rel="stylesheet" type="text/css" href="style/master.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="scripts/autoslide.js"></script>
+</head>
+<header>
+	<div id="navbar">
+		<div id="links">
+			<a href="index.html" class="navlinks">Home</a>
+			<a href="Games.html" class="navlinks">Games(I guess..)</a>
+			<a href="Contact.html" class="nawlinks">Contact</a>
+		</div>
+	</div>
+</header>
+<body style="overflow:scroll";> 	
+<div id="interests">
+<text><strong>What I Like About Halvor</strong></text> 
+</div>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/couple.png" style="width:100%">
+  <div class="text">1. Girlfriend's</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/games.png" style="width:100%">
+  <div class="text">2. Games</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/shopping.png" style="width:100%">
+  <div class="text">3. Shopping</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+	<br>
+	<div id="p">
+		<p>
+			<center>
+				<table>
+					<tr>
+						<ol>
+						<text><strong>Hobies</strong></text>
+						<div class="images">
+							<td><p>1. Music</p><a href=""><img id="musik" src="images/music.png" ></td>
+							<td><p>2. Parkour</p><a href=""> <img id="parkour" src="images/parkour.png"></td>
+							<td><p>3. Programming</p><a href=""><img id="programering" src="images/programming.png"></td>
+							
+							
+						</div>
+					</tr>
+					<tr>
+						<div class="images">
+							<td><p>4. Drawing</p><a href=""><img id="musik" src="images/drawing.png" ></td>
+							<td><p>5. Dancing</p><a href=""> <img id="parkour" src="images/danse.png" ></td>
+
+						</div>
+						</ol>
+					</tr>
+				</table>
+			</center>
+		</p>
+	</div>
+<br>	
+	<div id="customtext">
+<br>
+		<p>Jeg synes det er fedt at gå på halvorsminde og lære en masse nye mennesker at kende. At havde it er sjovt og vi lære en masse nye ting selv om man har prøvet meget af materialet før.
+		</p>
+	</div>
+	<div id="pic">
+		<img id="image" src="images/profilepic.jpg">
+	</div>
+	<div id="footer">
+		<footer>
+			Horizon Studios 2017
+		</footer>
+	</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

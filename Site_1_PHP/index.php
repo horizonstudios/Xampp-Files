@@ -1,6 +1,6 @@
 <?php 
-			include_once 'includes/header.php'; 
-		?>
+	include_once 'includes/header.php'; 
+?>
 		<div id="content">
 			<section class="parent">
 				<div class="child">
@@ -17,15 +17,15 @@
 				</div>
 			</section>
  
-			<?php
-			if(isset($_GET['contact'])){
-				include 'includes/contact.php';
-			}else if(isset($_GET['creations'])){
-				include 'includes/creations.php';
-			}else{
-				include 'includes/home.php';
-			}
-			?>
+<?php
+	if(isset($_GET['contact'])){
+		include 'includes/contact.php';
+	}else if(isset($_GET['creations'])){
+		include 'includes/creations.php';
+	}else{
+		include 'includes/home.php';
+	}
+?>
 		</div>
 		
 		<?php 

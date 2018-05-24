@@ -22,9 +22,20 @@
 					include_once 'includes/footer.php'; 
 				?>
 			</div>
-<script type="text/javascript">
+			<script type="text/javascript">
+function Scroll(){
+var top = document.getElementById('myHeader');
+var ypos = window.pageYOffset;
+if(ypos > 99) {
+	top.style.backgroundColor = "blue";
+}
+else{
+	top.style.backgroundColor = "rgba(255, 255, 255, 0)";
+	}
+}
 	window.addEventListener("scroll",Scroll);
-</script>
+
+	</script>
 		</body>
 	</div>
 </html>

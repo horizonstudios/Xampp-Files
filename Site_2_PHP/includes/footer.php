@@ -1,5 +1,8 @@
 <div id="footer">
 	<footer>
+		<div id="go_to_top_btn">
+			<button>Top</button>
+		</div>
 		<div id="newsletter">
 			<section>
 			<div class="container">

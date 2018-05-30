@@ -48,7 +48,7 @@
 					brand.style.fontSize = "0.8em";
 
 					sitenav.style.margin = "10px 100px 0 0";
-					sitenav.style.fontSize = "0.8em";
+					sitenav.style.fontSize = "1em";
 					
 
 					

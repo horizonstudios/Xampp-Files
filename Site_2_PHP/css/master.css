@@ -45,25 +45,28 @@ header #branding {
 	transition: all 1s;
 	transition-timing-function: ease-out;
 }
-#sitenav {
-	float: right;
-	margin: 35px 150px 0 0;
-	overflow: hidden;
-	transition: all 1s;
-	transition-timing-function: ease-out;
-}
-	#sitenav a {
+	#sitenav {
+		float: right;
+		margin: 35px 150px 0 0;
+		overflow: hidden;
+		transition: all 1s;
+		transition-timing-function: ease-out;
 		font-size: 1.5em;
+		transition: all 1s;
+		transition-timing-function: ease-out;
+	}
+	#sitenav a {
+
 	}
 	.navli {
 		float: left;
 		display: inline;
-		margin: 15px 20px 0 20px; 
+		margin: 0 20px 0 20px; 
 	}
 	.nav_link {
 		color: #ffffff;
 		text-decoration: none;
-		font-size: 16px;
+
 	}
 #nav_link:hover {
 	color: #A5B6CA;

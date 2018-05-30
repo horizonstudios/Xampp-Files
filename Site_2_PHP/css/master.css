@@ -15,10 +15,16 @@
 	padding-right: 20px;
 	color: #ffffff;
 }
-
+.dark{
+	padding: 15px;
+	background: #35424a;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-botton: 10px;
+}
 #body {
 	font: 15px/1.5 Areal;
-	background-color: #f4f4f4;
+	background-color: #D5DDE7;
 	
 }
 .header {
@@ -31,35 +37,40 @@
 	transition: all 1s;
 	transition-timing-function: ease-out;
 }
-
+/* Branding*/
 header #branding {
 	float: left;
 	margin: 20px 0 0 50px;
-	font-size: 1.5em;
+	font-size: 2em;
 	transition: all 1s;
 	transition-timing-function: ease-out;
 }
 #sitenav {
 	float: right;
-	margin: 10px 100px 0 0;
+	margin: 35px 150px 0 0;
 	overflow: hidden;
+	transition: all 1s;
+	transition-timing-function: ease-out;
 }
-header li {
-	float: left;
-	display: inline;
-	margin: 0 20px 0 20px;
-}
-.nav_link {
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 16px;
-}
+	#sitenav a {
+		font-size: 1.5em;
+	}
+	.navli {
+		float: left;
+		display: inline;
+		margin: 15px 20px 0 20px; 
+	}
+	.nav_link {
+		color: #ffffff;
+		text-decoration: none;
+		font-size: 16px;
+	}
 #nav_link:hover {
-	color: blue;
+	color: #A5B6CA;
 	font-weight: bold;
 }
-.highlight, .current .nav_link {
-	color: #235789;
+.highlight, #current .nav_link {
+	color: #2B4A6F;
 	font-weight: bold;
 }
 #showcase {
@@ -74,10 +85,13 @@ header li {
 }
 #showcase h1 {
 	margin: 360px 0 10px 0;
-	font-size: 7em;
+	font-size: 6em;
 }
 #showcase p {
 	font-size: 2.5em;
+}
+#showcase button {
+	margin: 14%;
 }
 #newsletter {
 	min-height: 60px;
@@ -113,10 +127,22 @@ header li {
 #boxes .box img {
 	width: 90px;
 }
-#footer {
-	padding: 20px;
-	margin-top: 20px;
-	color: #ffffff;
-	background-color: #8EA4D2;
-	text-align: center;
-}
+	
+	/* Main-col */
+	article#main-col{
+		float: left;
+		width: 65%;
+	}
+	/* Sidebar */
+	aside#sidebar{
+		float: right;
+		width: 30%;
+		margin-top: 10px;
+	}
+	#footer {
+		padding: 20px;
+		margin-top: 20px;
+		color: #ffffff;
+		background-color: #8EA4D2;
+		text-align: center;
+	}

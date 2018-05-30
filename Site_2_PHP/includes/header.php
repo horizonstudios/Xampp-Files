@@ -7,9 +7,10 @@
 			<div id="sitenav">
 				<nav>
 					<ul>
-						<li class="current"><a href="index.php" class="nav_link">Home</a></li>
-						<li><a href="index.php?contact" class="nav_link">Contact</a></li>
-						<li><a href="index.php?creations" class="nav_link">Creations</a></li>										
+						<li class="navli" id="current"><a href="index.php" class="nav_link">Home</a></li>
+						<li class="navli"><a href="index.php?about" class="nav_link">About</a></li>
+						<li class="navli"><a href="index.php?contact" class="nav_link">Contact</a></li>
+						<li class="navli"><a href="index.php?creations" class="nav_link">Creations</a></li>										
 					</ul>
 				</nav>
 			</div>

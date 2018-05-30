@@ -45,6 +45,42 @@
 			brisket ham hock landjaeger doner shoulder pork leberkas.</p>
 		</div>
 		<div class="box">
+				<div class="box">
+			<img src="./images/logo_tictactoe.gif">
+			<h3>TicTacToe</h3>
+			<p>Spicy jalapeno bacon ipsum dolor amet jowl<br>
+			pancetta ham jerky t-bone short loin porchetta<br>
+			brisket ham hock landjaeger doner shoulder pork leberkas.</p>
+		</div>
+		<div class="box">
+			<img src="./images/logo_tictactoe.gif">
+			<h3>TicTacToe</h3>
+			<p>Spicy jalapeno bacon ipsum dolor amet jowl<br>
+			pancetta ham jerky t-bone short loin porchetta<br>
+			brisket ham hock landjaeger doner shoulder pork leberkas.</p>
+		</div>
+		<div class="box">
+			<img src="./images/logo_tictactoe.gif">
+			<h3>TicTacToe</h3>
+			<p>Spicy jalapeno bacon ipsum dolor amet jowl<br> 
+			pancetta ham jerky t-bone short loin porchetta<br>
+			brisket ham hock landjaeger doner shoulder pork leberkas.</p>
+		</div>
+		<div class="box">
+			<img src="./images/logo_tictactoe.gif">
+			<h3>TicTacToe</h3>
+			<p>Spicy jalapeno bacon ipsum dolor amet jowl<br> 
+			pancetta ham jerky t-bone short loin porchetta<br>
+			brisket ham hock landjaeger doner shoulder pork leberkas.</p>
+		</div>
+		<div class="box">
+			<img src="./images/logo_tictactoe.gif">
+			<h3>TicTacToe</h3>
+			<p>Spicy jalapeno bacon ipsum dolor amet jowl<br> 
+			pancetta ham jerky t-bone short loin porchetta<br>
+			brisket ham hock landjaeger doner shoulder pork leberkas.</p>
+		</div>
+		<div class="box">
 			<img src="./images/logo_tictactoe.gif">
 			<h3>TicTacToe</h3>
 			<p>Spicy jalapeno bacon ipsum dolor amet jowl<br>

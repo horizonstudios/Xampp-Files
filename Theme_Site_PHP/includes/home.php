@@ -24,7 +24,7 @@
 		</footer>
 		</article>
 		</figcaption>
-	</figure>
+	</figure>awdmadwadwk
 	
 	
 <section>

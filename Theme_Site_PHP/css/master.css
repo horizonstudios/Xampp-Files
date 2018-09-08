@@ -2,32 +2,12 @@
 	margin: 0;
 	padding: 0;
 }
-.container {
-	width: 100%;
-	margin: auto;
-	overflow: hidden;
-}
-.button_1 {
-	height: 38px;
-	background: #e8491d;
-	border: 0;
-	padding-left: 20px;
-	padding-right: 20px;
-	color: #ffffff;
-}
-.dark{
-	padding: 15px;
-	background: #35424a;
-	color: #ffffff;
-	margin-top: 10px;
-	margin-botton: 10px;
-}
-#body {
+	#body_sec {
 	font: 15px/1.5 Areal;
-	background-color: #D5DDE7;
+	background-color: red;
 	
 }
-.header {
+	.header {
 	color: #ffffff;
 	min-height: 40px;
 	width: 100%;
@@ -37,112 +17,9 @@
 	transition: all 1s;
 	transition-timing-function: ease-out;
 }
-/* Branding*/
-header #branding {
-	float: left;
-	margin: 20px 0 0 50px;
-	font-size: 2em;
-	transition: all 1s;
-	transition-timing-function: ease-out;
-}
-	#sitenav {
-		float: right;
-		margin: 35px 150px 0 0;
-		overflow: hidden;
-		transition: all 1s;
-		transition-timing-function: ease-out;
-		font-size: 1.5em;
-		transition: all 1s;
-		transition-timing-function: ease-out;
-	}
-	#sitenav a {
 
-	}
-	.navli {
-		float: left;
-		display: inline;
-		margin: 0 20px 0 20px; 
-	}
-	.nav_link {
-		color: #ffffff;
-		text-decoration: none;
 
-	}
-#nav_link:hover {
-	color: #A5B6CA;
-	font-weight: bold;
-}
-.highlight, #current .nav_link {
-	color: #2B4A6F;
-	font-weight: bold;
-}
-#showcase {
-	min-height: 960px;
-	background: url('../images/showcase.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	text-align: center;
-	color: #ffffff;
-}
-#showcase h1 {
-	margin: 360px 0 10px 0;
-	font-size: 6em;
-}
-#showcase p {
-	font-size: 2.5em;
-}
-#showcase button {
-	margin: 14%;
-}
-#newsletter {
-	min-height: 60px;
-	height: 60px;
-	padding: 15px;
-	color: black;
-	background: #6279B8;
-}
-#newsletter form {
-	float: right;
-	margin-right: 27%;
-	top: 266%;
-	transform: translateY(-50%);
-}
-#newsletter input[type=email] {
-	padding: 4px;
-	height: 25px;
-	width: 250px;
-}
-#boxes {
-	margin-top: 20px;
-}
-#boxes .box{
-	float: left;
-	text-align: center;
-	width: 30%;
-	padding: 10px;
-	border: 2px;
-}
-#boxes .box h3 {
-	font-size: 1.4em;
-	color: #235789;
-}
-#boxes .box img {
-	width: 90px;
-}
 	
-	/* Main-col */
-	article#main-col{
-		float: left;
-		width: 65%;
-	}
-	/* Sidebar */
-	aside#sidebar{
-		float: right;
-		width: 30%;
-		margin-top: 10px;
-	}
 	#footer {
 		padding: 20px;
 		margin-top: 20px;

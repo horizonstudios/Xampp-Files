@@ -1,0 +1,30 @@
+	#category_sec {
+		text-align: center;
+		margin: 1% 1% 0% 1%;
+		width: 100%;
+		background-color: transparent;
+
+	}
+	.category_fig {
+		text-align: inherit;
+		width: 32.6%;
+		height: 10%;
+		display: inline-block;
+		background-color: pink;
+		padding: 1% 0% 1% 0%;
+	}
+	.category_fig img{
+		text-align: inherit;
+		width: 10%;
+	}
+	.category_fig figcaption {
+		text-align: center;
+		width: 10%;
+		height: 10%;
+		display: inline;
+	}
+	.category_fig article {
+		margin: auto;
+		width: 50%;
+		text-align: center;
+	}

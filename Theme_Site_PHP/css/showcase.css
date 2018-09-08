@@ -1,0 +1,17 @@
+	#showcase {
+	min-height: 960px;
+	background: url('../images/showcase.jpg') no-repeat center center fixed;
+	background-size: cover;
+	text-align: center;
+	color: #ffffff;
+}
+	#showcase h1 {
+	margin: 360px 0 10px 0;
+	font-size: 6em;
+}
+	#showcase p {
+	font-size: 2.5em;
+}
+	#showcase button {
+	margin: 14%;
+}

@@ -1,0 +1,63 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+
+   position:relative;
+}
+#header {
+   background:#ff0;
+   padding:10px;
+}
+#logodiv {
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	height:177px;
+}
+#logo {
+	height:177px;
+	width:886px;
+}
+#navbar {
+	text-align:center;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;
+}
+#counter {
+	text-align:center;
+}
+#imgcounter {
+	width:400px;
+	height:135px;
+}
+div#imagediv
+	img.a {
+       width: 50px;
+       height:50px;
+       position:fixed;
+     }
+     img.b {
+       width: 50px;
+       height:50px;
+       position:fixed;
+     }
+     img.c {
+       width: 50px;
+       height:50px;
+       position:fixed;
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;
+   background:#6cf;
+}
+ 
